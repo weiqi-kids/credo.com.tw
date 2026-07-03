@@ -11,6 +11,20 @@
 | `/companysafe/` | `/companysafe` | 企業安全三階段方案 |
 | `/naturalpersonsafe/` | `/naturalpersonsafe` | 個人安全三大方案 |
 | `/startup/` | `/startup` | 服務流程三步驟 + LINE QR |
+| `/insights/` | （新增） | 法律新知——SEO 文章區總索引，自動發文落點 |
+| `/insights/corporate-legal/` | （新增） | 企業法務：法務訂閱、合約審閱、勞資糾紛、營業秘密、ISO27001 |
+| `/insights/personal-asset/` | （新增） | 個人資產保障：不動產信託、意定監護、防詐、資產分配 |
+| `/insights/retirement-security/` | （新增） | 退休保障：退休規劃、SCA退休安心三寶 |
+
+## 網站地圖與自動發文（對齊 olderkkk / dreamer868 模式）
+
+- `sitemap.xml`、`robots.txt` 在 repo 根目錄；sitemap 由腳本產生，**勿手改**。
+- 自動發文管線唯一接口：
+  1. 文章寫到 `insights/<分類>/<slug>/index.html`（必含 `<title>`、`<meta name="description">`、`<meta name="date" content="YYYY-MM-DD">`；版型抄 `insights/corporate-legal/what-is-legal-subscription/`）
+  2. 跑 `node scripts/build-sitemap.mjs` → sitemap.xml＋總索引＋分類頁列表全部自動更新
+  3. commit + push 即部署
+- 分類即關鍵字群：新增分類要同時改 `scripts/build-sitemap.mjs` 的 `CATEGORIES`、建 `insights/<分類>/index.html`（抄現有分類頁，含 `INSIGHTS:LIST` 標記）。
+- DNS 切換到正式網域後：`SITE_URL=https://credo.com.tw node scripts/build-sitemap.mjs` 重產 sitemap（robots.txt 已預先指向正式網域，子路徑期間不生效是正常的）。
 
 ## 設計規範（沿用團隊標準）
 
