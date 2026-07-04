@@ -2,7 +2,7 @@
 import Base from "../../../layouts/Base.astro";
 import InsightList from "../../../components/InsightList.astro";
 import CategoryNav from "../../../components/CategoryNav.astro";
-import { CATEGORIES, LINE_URL } from "../../../lib/site";
+import { CATEGORIES, SERVICES, LINE_URL } from "../../../lib/site";
 import { getCollection } from "astro:content";
 
 export function getStaticPaths() {
@@ -13,6 +13,8 @@ const { category } = Astro.params;
 const cat = CATEGORIES[category!];
 const posts = await getCollection("insights", (p) => p.data.category === category);
 const base = import.meta.env.BASE_URL;
+// 內容骨架：本分類底下的服務 × 主題（docs/content-taxonomy.md）
+const services = Object.entries(SERVICES).filter(([, s]) => s.category === category);
 ---
 <Base
   title={`${cat.label} — 法律新知 — 詠業商略顧問有限公司`}
@@ -36,6 +38,25 @@ const base = import.meta.env.BASE_URL;
       )}
       <CategoryNav current={category} />
       <InsightList posts={posts} />
+
+      {services.length > 0 && (
+        <div class="topic-map">
+          <h2 class="section-title">主題總覽</h2>
+          {services.map(([, s]) => (
+            <section class="topic-service">
+              <h3>{s.label}</h3>
+              <ul>
+                {Object.entries(s.topics).map(([, t]) => (
+                  <li>
+                    <strong>{t.label}</strong>
+                    <span>{t.keywords}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          ))}
+        </div>
+      )}
     </div>
   </section>
 

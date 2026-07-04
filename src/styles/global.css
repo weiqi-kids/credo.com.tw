@@ -218,6 +218,25 @@ a { color: var(--brand-deep); }
 .breadcrumb { font-size: var(--text-sm); color: var(--ink-soft); margin-bottom: 1.5rem; }
 .breadcrumb a { color: var(--ink-soft); }
 
+/* —— 主題總覽（內容骨架，分類頁）—— */
+.topic-map { margin-top: 3.5rem; }
+.topic-service { margin-top: 2rem; }
+.topic-service h3 { color: var(--brand-deep); }
+.topic-service h3::after {
+  content: ""; display: block; width: 2.4em; height: 3px;
+  background: var(--brand); margin-top: 0.4rem;
+}
+.topic-service ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.8rem; }
+.topic-service li {
+  background: var(--surface); border-radius: var(--radius-md);
+  box-shadow: var(--shadow); padding: 0.9rem 1.2rem;
+}
+.topic-service li strong { display: block; font-size: var(--text-sm); }
+.topic-service li span { font-size: var(--text-xs); color: var(--ink-soft); }
+@media (min-width: 768px) {
+  .topic-service ul { grid-template-columns: 1fr 1fr; }
+}
+
 .faq-block { margin-top: 2rem; }
 .faq-block dt { font-weight: 700; margin-top: 1.2em; }
 .faq-block dd { margin: 0.3em 0 0; color: var(--ink-soft); }

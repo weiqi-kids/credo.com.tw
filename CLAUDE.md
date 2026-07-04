@@ -14,6 +14,7 @@ Repo：`weiqi-kids/credo.com.tw`（public）。
 4. 有 base 子路徑：`.astro` 內部連結/圖片一律 `import.meta.env.BASE_URL` 前綴，禁寫死 `/xxx`。
 5. 商家資訊（公司名/LINE/SCA 連結）只改 `src/lib/site.ts`。
 6. 內容以原站為準；發文＝放 `src/content/insights/<slug>.md`（格式見 README）。
+7. **選題/找素材對照 `docs/content-taxonomy.md`**（6 服務 × 25 主題 × 台灣搜尋關鍵字）；文章 frontmatter `topic` 必須是表內 slug（build 會驗證），程式端映射在 `src/lib/site.ts` 的 `SERVICES`。
 
 ## 待辦（接手進度）
 

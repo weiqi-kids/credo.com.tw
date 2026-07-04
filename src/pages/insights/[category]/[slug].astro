@@ -1,6 +1,6 @@
 ---
 import Base from "../../../layouts/Base.astro";
-import { CATEGORIES, LINE_URL, SITE_NAME } from "../../../lib/site";
+import { CATEGORIES, TOPICS, LINE_URL, SITE_NAME } from "../../../lib/site";
 import { getCollection, render } from "astro:content";
 import type { CollectionEntry } from "astro:content";
 
@@ -57,7 +57,7 @@ if (post.data.faq.length) {
 
       <article class="article">
         <h1>{post.data.title}</h1>
-        <p class="article-meta">{cat.label}｜{post.data.date}｜{post.data.author}</p>
+        <p class="article-meta">{cat.label}{post.data.topic && TOPICS[post.data.topic] ? `・${TOPICS[post.data.topic].label}` : ""}｜{post.data.date}｜{post.data.author}</p>
 
         <Content />
 
