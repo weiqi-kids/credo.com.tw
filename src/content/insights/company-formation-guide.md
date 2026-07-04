@@ -5,7 +5,6 @@ date: "2026-07-04"
 category: corporate-legal
 topic: company-formation
 kind: pillar
-draft: true
 keywords: 公司設立, 有限公司 股份有限公司 差別, 行號 公司 比較, 資本額規定, 公司登記費用, 開公司流程
 faq:
   - q: 現在開公司還有最低資本額限制嗎？

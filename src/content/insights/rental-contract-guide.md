@@ -5,7 +5,6 @@ date: "2026-07-04"
 category: personal-asset
 topic: leasing
 kind: pillar
-draft: true
 keywords: 租賃專法, 房客不搬走, 押金不還, 包租代管, 租賃契約範本, 遷讓房屋
 faq:
   - q: 押金最多可以收多少？

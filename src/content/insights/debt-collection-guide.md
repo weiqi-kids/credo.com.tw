@@ -5,7 +5,6 @@ date: "2026-07-04"
 category: corporate-legal
 topic: debt-collection
 kind: pillar
-draft: true
 keywords: 貨款催收, 存證信函範本, 本票裁定, 支付命令, 債權時效, 假扣押
 faq:
   - q: 存證信函發了對方不理會怎麼辦？

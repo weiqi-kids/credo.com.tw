@@ -5,7 +5,6 @@ date: "2026-07-04"
 category: corporate-legal
 topic: consumer-fairtrade
 kind: pillar
-draft: true
 keywords: 廣告不實罰則, 退貨規定, 公平會檢舉, 七天鑑賞期, 通訊交易解除權, 電商法遵
 faq:
   - q: 廣告不實會被罰多少錢？

@@ -5,7 +5,6 @@ date: "2026-07-04"
 category: personal-asset
 topic: title-registration
 kind: pillar
-draft: true
 keywords: 繼承登記, 共有土地分割, 借名登記, 繼承過戶流程, 未辦繼承登記, 遺產分割協議
 faq:
   - q: 繼承登記一定要在多久內辦完？

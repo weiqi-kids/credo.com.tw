@@ -5,7 +5,6 @@ date: "2026-07-04"
 category: personal-asset
 topic: inheritance
 kind: pillar
-draft: true
 keywords: 特留分怎麼算, 拋棄繼承期限, 遺產分割協議, 兄弟姊妹爭產, 拋棄繼承費用, 法定繼承順位
 faq:
   - q: 拋棄繼承一定要在過世後 3 個月內辦完嗎？

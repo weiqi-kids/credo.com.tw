@@ -5,7 +5,6 @@ date: "2026-07-04"
 category: personal-asset
 topic: real-estate-trust
 kind: pillar
-draft: true
 keywords: 不動產信託費用, 自益信託, 他益信託, 安養信託, 信託登記, 信託監察人
 faq:
   - q: 自益信託要繳贈與稅嗎？

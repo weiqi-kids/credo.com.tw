@@ -5,7 +5,6 @@ date: "2026-07-04"
 category: personal-asset
 topic: estate-tax-planning
 kind: pillar
-draft: true
 keywords: 遺產稅免稅額, 贈與稅244萬, 生前贈與, 遺產稅怎麼算, 繼承稅務規劃, 贈與稅怎麼算
 faq:
   - q: 遺產稅免稅額現在是多少？

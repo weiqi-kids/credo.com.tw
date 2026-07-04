@@ -5,7 +5,6 @@ date: "2026-07-04"
 category: corporate-legal
 topic: governance-succession
 kind: pillar
-draft: true
 keywords: 家族企業接班, 董事責任, 股權傳承, 公司治理, 特留分, 遺產稅規劃
 faq:
   - q: 公司股份要分給小孩，現在贈與比較好，還是等繼承？

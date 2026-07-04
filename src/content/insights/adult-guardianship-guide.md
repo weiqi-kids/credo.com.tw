@@ -5,7 +5,6 @@ date: "2026-07-04"
 category: personal-asset
 topic: adult-guardianship
 kind: pillar
-draft: true
 keywords: 意定監護契約費用, 監護宣告, 輔助宣告, 失智財產管理, 意定監護流程, 監護宣告費用
 faq:
   - q: 意定監護契約費用大概多少？

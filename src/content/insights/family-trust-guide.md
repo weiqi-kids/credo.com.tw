@@ -5,7 +5,6 @@ date: "2026-07-04"
 category: personal-asset
 topic: trust-succession
 kind: pillar
-draft: true
 keywords: 遺囑信託, 保險金信託, 家族信託 門檻, 信託傳承, 財產傳承規劃, 保險金信託費用
 faq:
   - q: 遺囑信託和一般遺囑有什麼不一樣？

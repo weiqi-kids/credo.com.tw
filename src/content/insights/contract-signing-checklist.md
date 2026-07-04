@@ -5,7 +5,6 @@ date: "2026-07-04"
 category: corporate-legal
 topic: contract-basics
 kind: pillar
-draft: true
 keywords: 合約範本, 報價單效力, 定型化契約, 簽約注意事項, 電子簽章, 違約金
 faq:
   - q: 報價單有法律效力嗎？對方回傳報價單我就要出貨嗎？

@@ -5,7 +5,6 @@ date: "2026-07-04"
 category: personal-asset
 topic: medical-autonomy
 kind: pillar
-draft: true
 keywords: 預立醫療決定, 病主法, DNR差別, 預立醫療照護諮商, 醫療委任代理人, 安寧緩和醫療條例
 faq:
   - q: 預立醫療決定跟簽 DNR（不施行心肺復甦術）意願書一樣嗎？

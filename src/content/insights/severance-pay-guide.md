@@ -5,7 +5,6 @@ date: "2026-07-04"
 category: corporate-legal
 topic: labor-disputes
 kind: pillar
-draft: true
 keywords: 資遣費怎麼算, 非自願離職, 加班費, 勞資調解流程, 職災賠償
 faq:
   - q: 資遣費到底怎麼算，新制跟舊制差在哪？

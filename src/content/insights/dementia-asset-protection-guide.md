@@ -5,7 +5,6 @@ date: "2026-07-04"
 category: personal-asset
 topic: asset-protection
 kind: pillar
-draft: true
 keywords: 監護人 可以動用財產嗎, 失智症 過戶, 安養信託, 監護宣告 財產清冊, 失智 財產保護
 faq:
   - q: 監護人可以隨便動用受監護人的財產嗎？

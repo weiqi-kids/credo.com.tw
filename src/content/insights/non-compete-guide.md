@@ -5,7 +5,6 @@ date: "2026-07-04"
 category: corporate-legal
 topic: trade-secrets
 kind: pillar
-draft: true
 keywords: 競業禁止條款有效嗎, 離職帶走客戶名單, 營業秘密法刑責, 競業禁止補償金, 保密協議NDA
 faq:
   - q: 競業禁止條款一定有效嗎？

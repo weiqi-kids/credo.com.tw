@@ -5,7 +5,6 @@ date: "2026-07-04"
 category: corporate-legal
 topic: cybersecurity-compliance
 kind: pillar
-draft: true
 keywords: ISO27001認證費用, 資安法適用對象, 駭客入侵公司責任, 個資外洩賠償, 資安事故法律責任, 資通安全管理法
 faq:
   - q: 我的公司規模不大，也要遵守資通安全管理法嗎？

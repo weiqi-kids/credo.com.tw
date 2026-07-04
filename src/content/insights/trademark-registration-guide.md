@@ -5,7 +5,6 @@ date: "2026-07-04"
 category: corporate-legal
 topic: intellectual-property
 kind: pillar
-draft: true
 keywords: 商標註冊流程費用, 專利申請, 著作權侵權, 抄襲提告, 商標搶註
 faq:
   - q: 商標註冊大概要花多少錢、多久？

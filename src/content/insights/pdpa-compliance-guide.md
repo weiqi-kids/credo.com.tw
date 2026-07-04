@@ -5,7 +5,6 @@ date: "2026-07-04"
 category: corporate-legal
 topic: privacy-compliance
 kind: pillar
-draft: true
 keywords: 個資法罰則, 會員資料外洩責任, 個資外洩通報, 客戶名單 個資法, 個資法 民事賠償
 faq:
   - q: 個資外洩公司會被罰多少錢？

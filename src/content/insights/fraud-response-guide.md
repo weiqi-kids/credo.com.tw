@@ -5,7 +5,6 @@ date: "2026-07-04"
 category: personal-asset
 topic: elder-fraud-prevention
 kind: pillar
-draft: true
 keywords: 投資詐騙 追回, 假檢警詐騙, 被詐騙 報警有用嗎, 詐欺 提告, 165 反詐騙專線, 警示帳戶
 faq:
   - q: 被詐騙報警真的有用嗎？現在還來得及嗎？

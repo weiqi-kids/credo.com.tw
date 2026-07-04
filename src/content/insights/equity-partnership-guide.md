@@ -5,7 +5,6 @@ date: "2026-07-04"
 category: corporate-legal
 topic: equity-partnership
 kind: pillar
-draft: true
 keywords: 股東協議書, 合夥拆夥, 技術入股, 乾股, 股權轉讓, 創辦人股權糾紛
 faq:
   - q: 股東協議書一定要找律師寫嗎？

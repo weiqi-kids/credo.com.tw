@@ -5,7 +5,6 @@ date: "2026-07-04"
 category: corporate-legal
 topic: business-cooperation
 kind: pillar
-draft: true
 keywords: 經銷合約範本, 加盟糾紛, 保密協議 NDA, 違約金上限, 加盟資訊揭露, 經銷商合約審閱
 faq:
   - q: 違約金可以約定多高都沒關係嗎？

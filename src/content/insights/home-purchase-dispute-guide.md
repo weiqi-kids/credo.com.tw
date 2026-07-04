@@ -5,7 +5,6 @@ date: "2026-07-04"
 category: personal-asset
 topic: property-transactions
 kind: pillar
-draft: true
 keywords: 預售屋解約, 漏水瑕疵擔保, 履約保證, 房屋買賣流程, 房地合一稅, 交屋糾紛
 faq:
   - q: 預售屋解約最多會被沒收多少錢？

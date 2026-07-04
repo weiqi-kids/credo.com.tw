@@ -5,7 +5,6 @@ date: "2026-07-04"
 category: personal-asset
 topic: wills
 kind: pillar
-draft: true
 keywords: 自書遺囑範例, 自書遺囑效力, 代筆遺囑, 公證遺囑費用, 遺囑無效, 立遺囑流程
 faq:
   - q: 自書遺囑範例網路上抄一份照著寫可以用嗎？

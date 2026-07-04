@@ -5,7 +5,6 @@ date: "2026-07-04"
 category: corporate-legal
 topic: labor-basics
 kind: pillar
-draft: true
 keywords: 勞動契約範本, 試用期資遣, 勞健保投保, 工讀生權益, 到職即日加保, 勞退6%
 faq:
   - q: 試用期沒過可以直接叫員工走人、不用付資遣費嗎？
