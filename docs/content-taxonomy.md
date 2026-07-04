@@ -3,6 +3,7 @@
 > 2026-07-04 制定。律師發文選題的唯一對照來源：**六大服務 → 骨架主題 → 台灣搜尋關鍵字**。
 > 程式端映射：`src/lib/site.ts` 的 `SERVICES`（主題 slug ＝文章 frontmatter `topic` 值）。
 > 新增/調整主題：改本表 → 同步改 `SERVICES` → `content.config.ts` 會自動驗證。
+> 主題頁「有文才開門」：主題有 ≥1 篇文章才生成 `/insights/<分類>/topic/<主題>/`，無文章的主題只在分類頁展示不成連結（避免 thin content）。
 
 ## 企業安全（category: `corporate-legal`）
 

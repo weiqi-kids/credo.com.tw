@@ -57,7 +57,11 @@ if (post.data.faq.length) {
 
       <article class="article">
         <h1>{post.data.title}</h1>
-        <p class="article-meta">{cat.label}{post.data.topic && TOPICS[post.data.topic] ? `・${TOPICS[post.data.topic].label}` : ""}｜{post.data.date}｜{post.data.author}</p>
+        <p class="article-meta">
+          {cat.label}{post.data.topic && TOPICS[post.data.topic] && (
+            <>・<a href={`${base}insights/${TOPICS[post.data.topic].category}/topic/${post.data.topic}/`}>{TOPICS[post.data.topic].label}</a></>
+          )}｜{post.data.date}｜{post.data.author}
+        </p>
 
         <Content />
 
