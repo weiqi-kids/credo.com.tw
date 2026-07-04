@@ -19,6 +19,7 @@ const NAV = [
   { key: "naturalpersonsafe", href: `${base}naturalpersonsafe/`, label: "個人安全" },
   { key: "startup", href: `${base}startup/`, label: "服務流程" },
   { key: "insights", href: `${base}insights/`, label: "法律新知" },
+  { key: "resources", href: `${base}resources/`, label: "實用工具" },
 ];
 ---
 <!DOCTYPE html>
@@ -72,6 +73,7 @@ const NAV = [
       {Object.entries(CATEGORIES).map(([key, c]) => (
         <a href={`${base}insights/${key}/`}>{c.label}</a>
       ))}
+      <a href={`${base}resources/`}>實用工具</a>
     </nav>
     <nav aria-label="聯絡">
       <h2>聯絡詠業</h2>

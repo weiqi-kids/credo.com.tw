@@ -1,0 +1,85 @@
+---
+import Base from "../../layouts/Base.astro";
+import AuthorBox from "../../components/AuthorBox.astro";
+import { CATEGORIES, TOPICS, LINE_URL, SITE_NAME } from "../../lib/site";
+import { getCollection, render, type CollectionEntry } from "astro:content";
+
+export async function getStaticPaths() {
+  const tools = await getCollection("resources", (r) => !r.data.draft);
+  return tools.map((tool) => ({ params: { slug: tool.id }, props: { tool } }));
+}
+
+interface Props {
+  tool: CollectionEntry<"resources">;
+}
+const { tool } = Astro.props;
+const { Content } = await render(tool);
+const base = import.meta.env.BASE_URL;
+const t = tool.data.topic ? TOPICS[tool.data.topic] : null;
+
+const schemas: object[] = [
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: tool.data.title,
+    description: tool.data.description,
+  },
+];
+if (tool.data.faq.length) {
+  schemas.push({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: tool.data.faq.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  });
+}
+---
+<Base
+  title={`${tool.data.title} — 詠業商略顧問有限公司`}
+  description={tool.data.description}
+  currentNav="resources"
+  schemas={schemas}
+>
+  <section class="section">
+    <div class="container">
+      <p class="breadcrumb">
+        <a href={base}>首頁</a> › <a href={`${base}resources/`}>實用工具</a> › {tool.data.title}
+      </p>
+
+      <article class="article">
+        <h1>{tool.data.title}</h1>
+        <p class="article-meta">{tool.data.moment}｜給{tool.data.audience}｜{tool.data.date} 更新</p>
+
+        <Content />
+
+        {tool.data.faq.length > 0 && (
+          <div class="faq-block">
+            <h2>常見問題</h2>
+            <dl>
+              {tool.data.faq.map((f) => (
+                <>
+                  <dt>{f.q}</dt>
+                  <dd>{f.a}</dd>
+                </>
+              ))}
+            </dl>
+          </div>
+        )}
+
+        {t && (
+          <p>想深入了解背後的法律規定，可讀「<a href={`${base}insights/${t.category}/topic/${tool.data.topic}/`}>{t.label}</a>」主題文章。</p>
+        )}
+
+        <AuthorBox author={tool.data.author} />
+
+        <div class="article-cta">
+          <p><strong>清單擋得住標準狀況，你的情況未必標準。</strong>拿不準的地方，加入詠業 LINE 官方帳號直接問。</p>
+          <a class="btn" href={LINE_URL} target="_blank" rel="noopener">聯絡我們</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</Base>
