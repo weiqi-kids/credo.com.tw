@@ -27,6 +27,8 @@ jobs:
         run: echo "${{ vars.CUSTOM_DOMAIN }}" > public/CNAME
       - name: Font-size gate
         run: node scripts/check-fontsize.mjs
+      - name: AI-tone gate
+        run: node scripts/audit-ai-tone.mjs
       - name: Build with Astro
         uses: withastro/action@v3
         with:

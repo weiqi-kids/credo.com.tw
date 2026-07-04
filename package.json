@@ -10,7 +10,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "check:fontsize": "node scripts/check-fontsize.mjs"
+    "check:fontsize": "node scripts/check-fontsize.mjs",
+    "check:aitone": "node scripts/audit-ai-tone.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
