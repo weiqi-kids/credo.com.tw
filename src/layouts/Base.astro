@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
-import { SITE_NAME, COPYRIGHT, orgSchema } from "../lib/site";
+import FloatingLine from "../components/FloatingLine.astro";
+import { SITE_NAME, COPYRIGHT, LINE_URL, CATEGORIES, orgSchema } from "../lib/site";
 
 interface Props {
   title: string;
@@ -59,7 +60,27 @@ const NAV = [
 </main>
 
 <footer class="site-footer">
-  {COPYRIGHT}
+  <div class="container footer-nav">
+    <nav aria-label="服務方案">
+      <h2>服務方案</h2>
+      <a href={`${base}companysafe/`}>企業安全</a>
+      <a href={`${base}naturalpersonsafe/`}>個人安全</a>
+      <a href={`${base}startup/`}>服務流程</a>
+    </nav>
+    <nav aria-label="法律新知">
+      <h2>法律新知</h2>
+      {Object.entries(CATEGORIES).map(([key, c]) => (
+        <a href={`${base}insights/${key}/`}>{c.label}</a>
+      ))}
+    </nav>
+    <nav aria-label="聯絡">
+      <h2>聯絡詠業</h2>
+      <a href={LINE_URL} target="_blank" rel="noopener">LINE 官方帳號</a>
+      <a href={base}>回首頁</a>
+    </nav>
+  </div>
+  <p class="footer-copy">{COPYRIGHT}</p>
 </footer>
+<FloatingLine />
 </body>
 </html>

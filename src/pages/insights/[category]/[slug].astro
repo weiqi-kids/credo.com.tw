@@ -1,11 +1,15 @@
 ---
 import Base from "../../../layouts/Base.astro";
+import AuthorBox from "../../../components/AuthorBox.astro";
+import PillarCard from "../../../components/PillarCard.astro";
+import CaseCard from "../../../components/CaseCard.astro";
+import RelatedPosts from "../../../components/RelatedPosts.astro";
 import { CATEGORIES, TOPICS, LINE_URL, SITE_NAME } from "../../../lib/site";
-import { getCollection, render } from "astro:content";
-import type { CollectionEntry } from "astro:content";
+import { getPublished, type Post } from "../../../lib/content";
+import { render } from "astro:content";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("insights");
+  const posts = await getPublished();
   return posts.map((post) => ({
     params: { category: post.data.category, slug: post.id },
     props: { post },
@@ -13,12 +17,14 @@ export async function getStaticPaths() {
 }
 
 interface Props {
-  post: CollectionEntry<"insights">;
+  post: Post;
 }
 const { post } = Astro.props;
 const { Content } = await render(post);
 const cat = CATEGORIES[post.data.category];
 const base = import.meta.env.BASE_URL;
+const isCase = post.data.kind === "case";
+const isPillar = post.data.kind === "pillar";
 
 const schemas: object[] = [
   {
@@ -61,9 +67,14 @@ if (post.data.faq.length) {
           {cat.label}{post.data.topic && TOPICS[post.data.topic] && (
             <>・<a href={`${base}insights/${TOPICS[post.data.topic].category}/topic/${post.data.topic}/`}>{TOPICS[post.data.topic].label}</a></>
           )}｜{post.data.date}｜{post.data.author}
+          {post.data.caseNo && <>｜{post.data.caseNo}</>}
         </p>
 
+        {isPillar && post.data.topic && <CaseCard topic={post.data.topic} excludeId={post.id} />}
+
         <Content />
+
+        {isCase && post.data.topic && <PillarCard topic={post.data.topic} excludeId={post.id} />}
 
         {post.data.faq.length > 0 && (
           <div class="faq-block">
@@ -79,11 +90,15 @@ if (post.data.faq.length) {
           </div>
         )}
 
+        <AuthorBox author={post.data.author} />
+
         <div class="article-cta">
           <p><strong>想進一步了解自己的情況怎麼處理？</strong>加入詠業 LINE 官方帳號，線上諮詢專屬的服務需求。</p>
           <a class="btn" href={LINE_URL} target="_blank" rel="noopener">聯絡我們</a>
         </div>
       </article>
+
+      <RelatedPosts topic={post.data.topic} excludeId={post.id} />
     </div>
   </section>
 </Base>

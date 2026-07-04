@@ -3,7 +3,7 @@ import Base from "../../../layouts/Base.astro";
 import InsightList from "../../../components/InsightList.astro";
 import CategoryNav from "../../../components/CategoryNav.astro";
 import { CATEGORIES, SERVICES, LINE_URL } from "../../../lib/site";
-import { getCollection } from "astro:content";
+import { getPublished } from "../../../lib/content";
 
 export function getStaticPaths() {
   return Object.keys(CATEGORIES).map((category) => ({ params: { category } }));
@@ -11,12 +11,12 @@ export function getStaticPaths() {
 
 const { category } = Astro.params;
 const cat = CATEGORIES[category!];
-const posts = await getCollection("insights", (p) => p.data.category === category);
+const posts = await getPublished((p) => p.data.category === category);
 const base = import.meta.env.BASE_URL;
 // 內容骨架：本分類底下的服務 × 主題（docs/content-taxonomy.md）。
 // 有文才開門：主題有文章才生成主題頁、卡片才變連結（跨 category 借用的文章也計入）。
 const services = Object.entries(SERVICES).filter(([, s]) => s.category === category);
-const allPosts = await getCollection("insights");
+const allPosts = await getPublished();
 const topicCount = (key: string) => allPosts.filter((p) => p.data.topic === key).length;
 ---
 <Base

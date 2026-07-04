@@ -3,9 +3,9 @@ import Base from "../../layouts/Base.astro";
 import InsightList from "../../components/InsightList.astro";
 import CategoryNav from "../../components/CategoryNav.astro";
 import { LINE_URL } from "../../lib/site";
-import { getCollection } from "astro:content";
+import { getPublished } from "../../lib/content";
 
-const posts = await getCollection("insights");
+const posts = await getPublished();
 ---
 <Base
   title="法律新知 — 詠業商略顧問有限公司"

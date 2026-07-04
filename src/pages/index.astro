@@ -1,5 +1,6 @@
 ---
 import Base from "../layouts/Base.astro";
+import LatestInsights from "../components/LatestInsights.astro";
 import { LINE_URL, SCA_URL } from "../lib/site";
 const base = import.meta.env.BASE_URL;
 ---
@@ -57,6 +58,8 @@ const base = import.meta.env.BASE_URL;
       </div>
     </div>
   </section>
+
+  <LatestInsights />
 
   <section class="section section--alt cta">
     <div class="container">

@@ -1,0 +1,32 @@
+---
+// 同主題推薦：文章頁尾列同 topic 最新 3 篇（排除自己）。
+import { getPublished, sortForList, postPath } from "../lib/content";
+import { TOPICS } from "../lib/site";
+
+interface Props {
+  topic?: string;
+  excludeId: string;
+}
+const { topic, excludeId } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const related = topic
+  ? sortForList(await getPublished((p) => p.data.topic === topic && p.id !== excludeId)).slice(0, 3)
+  : [];
+const label = topic && TOPICS[topic] ? TOPICS[topic].label : "";
+---
+{related.length > 0 && (
+  <section class="related-posts">
+    <h2>更多「{label}」文章</h2>
+    <ul>
+      {related.map((p) => (
+        <li>
+          <a href={`${base}${postPath(p)}`}>
+            {p.data.kind === "pillar" && <span class="badge-pillar">必讀</span>}
+            {p.data.title}
+            <span class="related-date">{p.data.date}</span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+)}

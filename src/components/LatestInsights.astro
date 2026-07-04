@@ -1,0 +1,33 @@
+---
+// 最新法律新知：服務頁/首頁尾段自動拉最新 3 篇，讓靜態頁跟著日更。
+import { getPublished, postPath } from "../lib/content";
+import { CATEGORIES } from "../lib/site";
+
+interface Props {
+  category?: string; // 不給＝全站
+}
+const { category } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const posts = (await getPublished((p) => (category ? p.data.category === category : true)))
+  .sort((a, b) => b.data.date.localeCompare(a.data.date))
+  .slice(0, 3);
+const moreHref = category ? `${base}insights/${category}/` : `${base}insights/`;
+---
+{posts.length > 0 && (
+  <section class="section latest-insights">
+    <div class="container">
+      <h2 class="section-title">最新法律新知</h2>
+      <div class="insight-list">
+        {posts.map((p) => (
+          <a class="insight-item" href={`${base}${postPath(p)}`}>
+            <span class="insight-cat">{CATEGORIES[p.data.category].label}</span>
+            <span class="insight-title">{p.data.title}</span>
+            <span class="insight-date">{p.data.date}</span>
+            <span class="insight-desc">{p.data.description}</span>
+          </a>
+        ))}
+      </div>
+      <p class="cta"><a class="btn btn--ghost" href={moreHref}>看更多</a></p>
+    </div>
+  </section>
+)}

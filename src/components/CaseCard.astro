@@ -1,0 +1,22 @@
+---
+// 真實案例卡：鎮站文開頭引同主題最新一篇借鏡文；沒有就不渲染。
+import { getPublished, postPath } from "../lib/content";
+
+interface Props {
+  topic: string;
+  excludeId?: string;
+}
+const { topic, excludeId } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const cases = (
+  await getPublished((p) => p.data.topic === topic && p.data.kind === "case" && p.id !== excludeId)
+).sort((a, b) => b.data.date.localeCompare(a.data.date));
+const latest = cases[0];
+---
+{latest && (
+  <a class="case-card" href={`${base}${postPath(latest)}`}>
+    <span class="case-card-hint">⚠️ 真實判決案例</span>
+    <span class="case-card-title">{latest.data.title}</span>
+    {latest.data.caseNo && <span class="case-card-no">{latest.data.caseNo}</span>}
+  </a>
+)}

@@ -1,0 +1,13 @@
+---
+import { AUTHORS } from "../lib/site";
+
+interface Props {
+  author: string;
+}
+const { author } = Astro.props;
+const a = AUTHORS[author] ?? { name: author, credential: "", bio: "" };
+---
+<aside class="author-box">
+  <p class="author-name">撰文者：{a.name}{a.credential && <span class="author-cred">｜{a.credential}</span>}</p>
+  {a.bio && <p class="author-bio">{a.bio}</p>}
+</aside>

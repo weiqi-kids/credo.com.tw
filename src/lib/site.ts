@@ -5,6 +5,16 @@ export const LINE_URL = "https://lin.ee/snYsbHA";
 export const SCA_URL = "https://sca-ret.com/";
 export const COPYRIGHT = "版權所有 © 2023 詠業商略顧問有限公司";
 
+// 文章署名（YMYL/E-E-A-T）：真實律師姓名＋登錄字號後補，補上後全站自動生效。
+// 文章 frontmatter `author` 對應這裡的 key；查不到就以 author 字串直接顯示。
+export const AUTHORS: Record<string, { name: string; credential: string; bio: string }> = {
+  "詠業CREDO 法務團隊": {
+    name: "詠業CREDO 法務團隊",
+    credential: "執業律師與上市公司法務主管組成",
+    bio: "詠業商略顧問由執業律師、ISO27001 資安認證顧問與多家上市公司法務主管組成，專注個人與中小企業的「安全」解決方案。",
+  },
+};
+
 // 文章分類＝SEO 關鍵字群（新增分類：這裡＋content.config.ts 的 enum 同步改）
 // cta：分類頁在說明下方顯示的方案按鈕（選填）
 export const CATEGORIES: Record<

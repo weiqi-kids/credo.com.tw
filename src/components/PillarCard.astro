@@ -1,0 +1,26 @@
+---
+// 導讀卡：借鏡文導向同主題鎮站文；無鎮站文則退回主題頁（主題頁必存在，因本文已開門）。
+import { TOPICS } from "../lib/site";
+import { getPillar, postPath } from "../lib/content";
+
+interface Props {
+  topic: string;
+  excludeId?: string;
+}
+const { topic, excludeId } = Astro.props;
+const base = import.meta.env.BASE_URL;
+const t = TOPICS[topic];
+const pillar = await getPillar(topic);
+const target =
+  pillar && pillar.id !== excludeId
+    ? { href: `${base}${postPath(pillar)}`, label: pillar.data.title }
+    : t
+      ? { href: `${base}insights/${t.category}/topic/${topic}/`, label: `${t.label}主題總覽` }
+      : null;
+---
+{target && (
+  <a class="pillar-card" href={target.href}>
+    <span class="pillar-card-hint">💡 想避免同樣的下場？先看這篇</span>
+    <span class="pillar-card-title">{target.label}</span>
+  </a>
+)}

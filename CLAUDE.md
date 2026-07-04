@@ -14,7 +14,10 @@ Repo：`weiqi-kids/credo.com.tw`（public）。
 4. 有 base 子路徑：`.astro` 內部連結/圖片一律 `import.meta.env.BASE_URL` 前綴，禁寫死 `/xxx`。
 5. 商家資訊（公司名/LINE/SCA 連結）只改 `src/lib/site.ts`。
 6. 內容以原站為準；發文＝放 `src/content/insights/<slug>.md`（格式見 README）。
-7. **選題/找素材對照 `docs/content-taxonomy.md`**（6 服務 × 25 主題 × 台灣搜尋關鍵字）；文章 frontmatter `topic` 必須是表內 slug（build 會驗證），程式端映射在 `src/lib/site.ts` 的 `SERVICES`。
+7. **選題/找素材對照 `docs/content-taxonomy.md`**（6 服務 × 25 主題 × 台灣搜尋關鍵字＋四種內容代名詞：借鏡文/鎮站文/錦囊/時事文）；文章 frontmatter `topic` 必須是表內 slug（build 會驗證），程式端映射在 `src/lib/site.ts` 的 `SERVICES`。
+8. **法域鎖台灣＋引用附原始連結**：只引中華民國法規/判決；法條連結由程式查表生成驗證，禁止手寫或 AI 生成網址。
+9. **取文一律走 `src/lib/content.ts` 的 `getPublished()`**（統一 draft 過濾），不要直接 `getCollection`。
+10. 整體佈局與生長計畫見 `/root/.claude/plans/smooth-sparking-wall.md`（Phase 2 鎮站文 → Phase 3 借鏡文管線 → Phase 4 錦囊）。
 
 ## 待辦（接手進度）
 
