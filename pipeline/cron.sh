@@ -8,6 +8,10 @@ REPO="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$REPO"
 set -a; [ -f pipeline/.env ] && . pipeline/.env; set +a
 
+# 先從 dreamer868 當日帳本差異領 JID 清單（JList 領走即清空、兩站共用帳號，見 sibling-jids.sh）
+pipeline/sibling-jids.sh pipeline/.cache/today-jids.json || echo "[cron] sibling-jids 失敗，退回直接 JList"
+if [ -s pipeline/.cache/today-jids.json ]; then export JIDS_FILE=pipeline/.cache/today-jids.json; fi
+
 node pipeline/run.mjs || echo "[cron] run.mjs 非零退出"
 
 if [ "${DRY_RUN:-}" = "1" ]; then echo "[cron] DRY_RUN — 不 commit"; exit 0; fi

@@ -8,7 +8,7 @@ import { auth, getChangeList, getDoc, fullText } from './judicial.mjs';
 import { extractCourtName } from './courts.mjs';
 import { prefilterJids, classifyDoc } from './classify.mjs';
 import { parseJid } from './jid.mjs';
-import { claudePrint } from './claude.mjs';
+import { askJson } from './claude.mjs';
 import { buildRewritePrompt, buildVerifyPrompt } from './rewrite.mjs';
 import { gate1, gate2, gate3 } from './gates.mjs';
 import { buildMarkdown, buildSlug, judgmentUrlOf } from './markdown.mjs';
@@ -48,9 +48,17 @@ if (!user || !pass) { console.error('缺 JUD_USER/JUD_PASS（pipeline/.env）');
 
 log(`開始（${DRY ? 'DRY_RUN' : '正式'}）`);
 const token = await auth(user, pass);
-const days = await getChangeList(token);
-const allJids = days.flatMap((d) => d.list || []);
-log(`JList 共 ${allJids.length} 筆異動`);
+// JList 為「領走即清空」且與 dreamer868 共用帳號——正常由 sibling-jids.sh 從
+// dreamer868 當日帳本 git 差異取得清單（JIDS_FILE）；直接呼叫 JList 僅備援。
+let allJids;
+if (process.env.JIDS_FILE) {
+  allJids = JSON.parse(readFileSync(process.env.JIDS_FILE, 'utf8'));
+  log(`JIDS_FILE 載入 ${allJids.length} 筆`);
+} else {
+  const days = await getChangeList(token);
+  allJids = days.flatMap((d) => d.list || []);
+  log(`JList 共 ${allJids.length} 筆異動`);
+}
 
 const seen = loadSeen();
 const signatures = loadSignatures();
@@ -62,10 +70,11 @@ const publishedTopics = new Set();
 const publishedFiles = [];
 
 for (const jid of fresh) {
-  if (published >= LIMITS.perDayTotal || attempts >= LIMITS.maxRewriteAttemptsPerDay) break;
+  if (published >= LIMITS.perDayTotal || attempts >= Number(process.env.MAX_ATTEMPTS || LIMITS.maxRewriteAttemptsPerDay)) break;
   let doc;
   try { doc = await getDoc(token, jid); } catch (e) { log(`JDoc 失敗 ${jid}: ${e.message}`); continue; }
   if (!DRY) { seen.add(jid); }
+  if (!doc) continue; // 已移除或未公開
   const hit = classifyDoc(doc);
   if (!hit) continue;
   const { rule } = hit;
@@ -82,7 +91,7 @@ for (const jid of fresh) {
   attempts += 1;
   let article;
   try {
-    article = await claudePrint(buildRewritePrompt({ doc, rule, caseNo, courtName, existingTitles: existing }), { timeoutMs: 300000 });
+    article = await askJson(buildRewritePrompt({ doc, rule, caseNo, courtName, existingTitles: existing }), { timeoutMs: 300000 });
   } catch (e) { log(`改編失敗: ${e.message}`); continue; }
 
   const g1 = gate1(article);
@@ -91,7 +100,7 @@ for (const jid of fresh) {
   attempts += 1;
   let verdict;
   try {
-    verdict = await claudePrint(buildVerifyPrompt({ article, doc, existingList: existing }), { timeoutMs: 300000 });
+    verdict = await askJson(buildVerifyPrompt({ article, doc, existingList: existing }), { timeoutMs: 300000 });
   } catch (e) { log(`查核失敗: ${e.message}`); continue; }
   const g2 = gate2(verdict);
   if (!g2.ok) { log(`閘門二退件: ${g2.problems.join('; ')}`); quarantine(`g2-${jid.replace(/,/g, '_')}`, { article, verdict }); continue; }

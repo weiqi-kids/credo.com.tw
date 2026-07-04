@@ -19,8 +19,16 @@ Repo：`weiqi-kids/credo.com.tw`（public）。
 9. **取文一律走 `src/lib/content.ts` 的 `getPublished()`**（統一 draft 過濾），不要直接 `getCollection`。
 10. 整體佈局與生長計畫見 `/root/.claude/plans/smooth-sparking-wall.md`（Phase 2 鎮站文 → Phase 3 借鏡文管線 → Phase 4 錦囊）。
 
+## 借鏡文管線（pipeline/）
+
+- 每日產線：`pipeline/cron.sh`（**尚未掛 cron**，排程建議 UTC 17:40）；乾跑 `DRY_RUN=1`。
+- **司法院 JList 領走即清空且與 dreamer868 共用帳號**：dreamer868 17:11 UTC 先領，credo 用 `pipeline/sibling-jids.sh` 從它的帳本 git 差異取當日清單（JDoc 不受限）。若 credo 要獨立，需另辦司法院資料開放平臺帳號。
+- 三道閘門：去識別化＋AI味＋自評 → 獨立查核（忠實/法域/倫理/新穎性）→ 法條連結查表驗證（`pipeline/laws.mjs`，42 部法規 pcode 已全數驗證）。退件進 `pipeline/quarantine/`。
+- 發佈紀錄 `pipeline/published-log.md`（先發後審，律師抽查用）；下架＝`git revert`。
+
 ## 待辦（接手進度）
 
 - [ ] DNS 切換：設 repo 變數 `CUSTOM_DOMAIN=credo.com.tw`（deploy.yml 自動處理 CNAME/BASE/SITE）
 - [ ] 接 seo-ops：備妥 GA4/GSC 服務帳號與 Slack 頻道後跑 `node /root/seo-ops/bin/site-preflight.mjs`
-- [ ] 自動發文 adapter（`/root/seo-ops/adapters/`，等內容產線定案）
+- [ ] 借鏡文 cron 排程（用戶點頭後：`40 17 * * *` 進 crontab）＋司法院獨立帳號
+- [ ] seo-ops 接入時寫 adapter 偵測 published-log
