@@ -6,8 +6,9 @@ const base = import.meta.env.BASE_URL;
 <Base
   title="詠業商略顧問有限公司"
   description="詠業CREDO專注提供個人及中小企業關於「安全」的解決方案：法務訂閱、資產監護、智財維權與資安策定。"
+  preloadImage="images/hero-home.webp"
 >
-  <section class="hero arrow-divider" style={`background-image:url('${base}images/hero-home.png')`}>
+  <section class="hero arrow-divider" style={`background-image:url('${base}images/hero-home.webp')`}>
     <div class="container">
       <h1>獨有的法務訂閱、資產監護、<br />智財維權與資安策定</h1>
       <p class="lead">公司為了「安全」控管，團隊除了執業律師結合ISO27001資訊安全認證夥伴後，在多家上市公司任職法務主管的專業團隊也陸續加入詠業，我們便持續開發法務資料庫系統，讓科技法務走入人群。</p>
@@ -19,18 +20,18 @@ const base = import.meta.env.BASE_URL;
     <div class="container">
       <div class="audience-grid">
         <a class="audience-card" href={`${base}companysafe/`}>
-          <img src={`${base}images/card-corporate.png`} alt="企業安全解決方案" />
+          <img src={`${base}images/card-corporate.webp`} alt="企業安全解決方案" width="1200" height="675" loading="lazy" decoding="async" />
           <span class="label">法人</span>
         </a>
         <a class="audience-card" href={`${base}naturalpersonsafe/`}>
-          <img src={`${base}images/card-personal.png`} alt="個人安全解決方案" />
+          <img src={`${base}images/card-personal.webp`} alt="個人安全解決方案" width="1200" height="675" loading="lazy" decoding="async" />
           <span class="label">自然人</span>
         </a>
       </div>
     </div>
   </section>
 
-  <section class="hero arrow-divider" style={`background-image:url('${base}images/hero-life.png')`}>
+  <section class="hero arrow-divider" style={`background-image:url('${base}images/hero-life.webp')`}>
     <div class="container">
       <div class="duo">
         <div>
@@ -39,7 +40,7 @@ const base = import.meta.env.BASE_URL;
           <a class="btn" href={`${base}startup/`}>如何啟動服務流程</a>
         </div>
         <div class="art">
-          <img src={`${base}images/life-illustration.png`} alt="詠業服務示意" />
+          <img src={`${base}images/life-illustration.webp`} alt="詠業服務示意" width="750" height="1000" loading="lazy" decoding="async" />
         </div>
       </div>
     </div>
@@ -51,7 +52,7 @@ const base = import.meta.env.BASE_URL;
       <p class="section-sub">為什麼您應該相信詠業CREDO商略團隊</p>
       <div class="partner-grid">
         {[1, 2, 3, 4, 5, 6, 7].map((i) => (
-          <img src={`${base}images/partner-${i}.png`} alt="合作夥伴" loading="lazy" />
+          <img src={`${base}images/partner-${i}.webp`} alt="合作夥伴" width="400" height="468" loading="lazy" decoding="async" />
         ))}
       </div>
     </div>
