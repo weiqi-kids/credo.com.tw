@@ -19,6 +19,10 @@ Repo：`weiqi-kids/credo.com.tw`（public）。
 9. **取文一律走 `src/lib/content.ts` 的 `getPublished()`**（統一 draft 過濾），不要直接 `getCollection`。
 10. 整體佈局與生長計畫見 `/root/.claude/plans/smooth-sparking-wall.md`（Phase 2 鎮站文 → Phase 3 借鏡文管線 → Phase 4 錦囊）。
 
+## 現階段：文章製作流程細修（2026-07-04 起）
+
+**用戶判定現有 31 篇為初稿等級、未達律師品牌文體標準。** 細修完成前：不掛 cron、新文章產製先讀 `docs/lessons-writing.md`（文體失敗模式與有效手段）再動筆。
+
 ## 借鏡文管線（pipeline/）
 
 - 每日產線：`pipeline/cron.sh`（**尚未掛 cron**，排程建議 UTC 17:40）；乾跑 `DRY_RUN=1`。
@@ -30,5 +34,6 @@ Repo：`weiqi-kids/credo.com.tw`（public）。
 
 - [ ] DNS 切換：設 repo 變數 `CUSTOM_DOMAIN=credo.com.tw`（deploy.yml 自動處理 CNAME/BASE/SITE）
 - [ ] 接 seo-ops：備妥 GA4/GSC 服務帳號與 Slack 頻道後跑 `node /root/seo-ops/bin/site-preflight.mjs`
-- [ ] 借鏡文 cron 排程（用戶點頭後：`40 17 * * *` 進 crontab）＋司法院獨立帳號
+- [ ] 文章製作流程細修（進行中的階段，品質達標為 cron 前置條件）
+- [ ] 借鏡文 cron 排程（文體達標＋用戶點頭後：`40 17 * * *`）＋司法院獨立帳號
 - [ ] seo-ops 接入時寫 adapter 偵測 published-log
