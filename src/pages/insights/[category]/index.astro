@@ -1,0 +1,38 @@
+---
+import Base from "../../../layouts/Base.astro";
+import InsightList from "../../../components/InsightList.astro";
+import CategoryNav from "../../../components/CategoryNav.astro";
+import { CATEGORIES, LINE_URL } from "../../../lib/site";
+import { getCollection } from "astro:content";
+
+export function getStaticPaths() {
+  return Object.keys(CATEGORIES).map((category) => ({ params: { category } }));
+}
+
+const { category } = Astro.params;
+const cat = CATEGORIES[category!];
+const posts = await getCollection("insights", (p) => p.data.category === category);
+const base = import.meta.env.BASE_URL;
+---
+<Base
+  title={`${cat.label} — 法律新知 — 詠業商略顧問有限公司`}
+  description={`${cat.label}實務解析：${cat.description}`}
+  currentNav="insights"
+>
+  <section class="section">
+    <div class="container">
+      <p class="breadcrumb"><a href={base}>首頁</a> › <a href={`${base}insights/`}>法律新知</a> › {cat.label}</p>
+      <h1 class="section-title">{cat.label}</h1>
+      <p class="section-sub">{cat.description}</p>
+      <CategoryNav current={category} />
+      <InsightList posts={posts} />
+    </div>
+  </section>
+
+  <section class="section section--alt cta">
+    <div class="container">
+      <h2>有法律問題想諮詢？</h2>
+      <a class="btn" href={LINE_URL} target="_blank" rel="noopener">聯絡我們</a>
+    </div>
+  </section>
+</Base>

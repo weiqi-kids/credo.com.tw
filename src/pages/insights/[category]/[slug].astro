@@ -1,0 +1,85 @@
+---
+import Base from "../../../layouts/Base.astro";
+import { CATEGORIES, LINE_URL, SITE_NAME } from "../../../lib/site";
+import { getCollection, render } from "astro:content";
+import type { CollectionEntry } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("insights");
+  return posts.map((post) => ({
+    params: { category: post.data.category, slug: post.id },
+    props: { post },
+  }));
+}
+
+interface Props {
+  post: CollectionEntry<"insights">;
+}
+const { post } = Astro.props;
+const { Content } = await render(post);
+const cat = CATEGORIES[post.data.category];
+const base = import.meta.env.BASE_URL;
+
+const schemas: object[] = [
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.data.title,
+    description: post.data.description,
+    datePublished: post.data.date,
+    author: { "@type": "Organization", name: SITE_NAME },
+    publisher: { "@type": "Organization", name: SITE_NAME },
+  },
+];
+if (post.data.faq.length) {
+  schemas.push({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: post.data.faq.map((f) => ({
+      "@type": "Question",
+      name: f.q,
+      acceptedAnswer: { "@type": "Answer", text: f.a },
+    })),
+  });
+}
+---
+<Base
+  title={`${post.data.title} — 詠業商略顧問有限公司`}
+  description={post.data.description}
+  currentNav="insights"
+  schemas={schemas}
+>
+  <section class="section">
+    <div class="container">
+      <p class="breadcrumb">
+        <a href={base}>首頁</a> › <a href={`${base}insights/`}>法律新知</a> › <a href={`${base}insights/${post.data.category}/`}>{cat.label}</a> › {post.data.title}
+      </p>
+
+      <article class="article">
+        <h1>{post.data.title}</h1>
+        <p class="article-meta">{cat.label}｜{post.data.date}｜{post.data.author}</p>
+
+        <Content />
+
+        {post.data.faq.length > 0 && (
+          <div class="faq-block">
+            <h2>常見問題</h2>
+            <dl>
+              {post.data.faq.map((f) => (
+                <>
+                  <dt>{f.q}</dt>
+                  <dd>{f.a}</dd>
+                </>
+              ))}
+            </dl>
+          </div>
+        )}
+
+        <div class="article-cta">
+          <p><strong>想進一步了解自己的情況怎麼處理？</strong>加入詠業 LINE 官方帳號，線上諮詢專屬的服務需求。</p>
+          <a class="btn" href={LINE_URL} target="_blank" rel="noopener">聯絡我們</a>
+        </div>
+      </article>
+    </div>
+  </section>
+</Base>

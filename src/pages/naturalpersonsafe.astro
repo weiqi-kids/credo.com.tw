@@ -1,0 +1,49 @@
+---
+import Base from "../layouts/Base.astro";
+const base = import.meta.env.BASE_URL;
+
+const CARDS = [
+  {
+    title: "不動產管理與信託",
+    body: "團隊成員是業界唯一得過國家品質「玉山獎」的管理團隊，甚至擁有多位法人用戶指定不動產管家。現在我們將管理經驗打造成線上管理及信託收益系統，讓屋主放心交付。",
+  },
+  {
+    title: "意定監護及防詐措施",
+    body: "「花了大半輩子賺來的錢還照顧不了自己！」我們尊悉您的需要，也將專案管理整合在自動化流程，除了打造意定監護管理平台，甚至配有防詐AI機器人，而律師團隊做好最後把關，不讓風險趁虛而入。",
+  },
+  {
+    title: "資產指定分配",
+    body: "不管是收益分配還是資產，牽涉的都是大筆金錢，詠業團隊早已和信託接軌。我們更採用標下國家標案的資金控管標準，筆筆入信託且建立專屬帳戶，讓您的收益指定使用，而在最後分配上，詠業律師也會給您專業建議。",
+  },
+];
+---
+<Base
+  title="個人安全 — 詠業商略顧問有限公司"
+  description="個人安全，詠業給您的解決方案：不動產管理與信託、意定監護及防詐措施、資產指定分配。"
+  currentNav="naturalpersonsafe"
+>
+  <section class="hero arrow-divider" style={`background-image:url('${base}images/card-personal.png')`}>
+    <div class="container">
+      <h1>個人安全<br />詠業給您的解決方案</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="card-grid">
+        {CARDS.map((c) => (
+          <div class="svc-card">
+            <h3>{c.title}</h3>
+            <p>{c.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta">
+    <div class="container">
+      <a class="btn btn--ghost" href={base}>回首頁</a>
+    </div>
+  </section>
+</Base>

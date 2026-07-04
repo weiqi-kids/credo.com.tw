@@ -1,0 +1,44 @@
+---
+import Base from "../layouts/Base.astro";
+const base = import.meta.env.BASE_URL;
+
+const STEPS = [
+  { img: "step-1.png", alt: "掃描QR-CODE", body: "掃描QR-CODE，加入詠業好友後，可線上諮詢專屬的服務需求。" },
+  { img: "step-2.png", alt: "選購方案", body: "直接在圖文選單點擊購買方案，選擇服務/訂閱類型，付款完畢即可運作。" },
+  { img: "step-3.png", alt: "啟動服務", body: "按照合約，直接執行或於委任要件啟動後執行滾動式服務。" },
+];
+---
+<Base
+  title="如何啟動服務流程 — 詠業商略顧問有限公司"
+  description="掃描QR-CODE加入詠業好友、線上選購服務方案、按合約啟動滾動式服務——三步驟啟動詠業CREDO服務流程。"
+  currentNav="startup"
+>
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">如何啟動服務流程</h2>
+      <p class="section-sub">服務流程，詠業CREDO都經過律師審約，且經過公證人公證後，合約也會送達法院。而其餘惱人的繁瑣細節，詠業CREDO也已簽訂專業合約保護我們詠業的客戶！</p>
+      <div class="qr-block">
+        <img src={`${base}images/line-qrcode.png`} alt="詠業 LINE 官方帳號 QR-CODE" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="steps">
+        {STEPS.map((s) => (
+          <div class="step">
+            <img src={`${base}images/${s.img}`} alt={s.alt} />
+            <p>{s.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta">
+    <div class="container">
+      <a class="btn btn--ghost" href={base}>回首頁</a>
+    </div>
+  </section>
+</Base>

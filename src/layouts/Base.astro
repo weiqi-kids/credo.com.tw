@@ -1,0 +1,63 @@
+---
+import "../styles/global.css";
+import { SITE_NAME, COPYRIGHT, orgSchema } from "../lib/site";
+
+interface Props {
+  title: string;
+  description: string;
+  schemas?: object[];
+  currentNav?: string; // 對應 nav key：companysafe / naturalpersonsafe / startup / insights
+}
+const { title, description, schemas = [], currentNav } = Astro.props;
+
+const base = import.meta.env.BASE_URL; // 含尾斜線
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const NAV = [
+  { key: "companysafe", href: `${base}companysafe/`, label: "企業安全" },
+  { key: "naturalpersonsafe", href: `${base}naturalpersonsafe/`, label: "個人安全" },
+  { key: "startup", href: `${base}startup/`, label: "服務流程" },
+  { key: "insights", href: `${base}insights/`, label: "法律新知" },
+];
+---
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+<link rel="icon" href={`${base}images/logo.png`} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:type" content="website" />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={new URL(`${base}images/logo.png`, Astro.site)} />
+<link rel="sitemap" href={`${base}sitemap-index.xml`} />
+{[orgSchema(), ...schemas].map((s) => (
+  <script type="application/ld+json" set:html={JSON.stringify(s)} />
+))}
+</head>
+<body>
+<a class="skip-link" href="#main">跳至主要內容</a>
+
+<header class="site-header">
+  <div class="container">
+    <a class="site-logo" href={base}><img src={`${base}images/logo.png`} alt={SITE_NAME} /></a>
+    <nav class="site-nav" aria-label="主選單">
+      {NAV.map((n) => (
+        <a href={n.href} aria-current={currentNav === n.key ? "page" : undefined}>{n.label}</a>
+      ))}
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+  <slot />
+</main>
+
+<footer class="site-footer">
+  {COPYRIGHT}
+</footer>
+</body>
+</html>

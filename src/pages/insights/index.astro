@@ -1,0 +1,30 @@
+---
+import Base from "../../layouts/Base.astro";
+import InsightList from "../../components/InsightList.astro";
+import CategoryNav from "../../components/CategoryNav.astro";
+import { LINE_URL } from "../../lib/site";
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("insights");
+---
+<Base
+  title="法律新知 — 詠業商略顧問有限公司"
+  description="詠業CREDO法律新知：企業法務訂閱、合約審閱、勞資糾紛、不動產信託、意定監護、防詐與退休保障的實務解析，由律師與法務團隊撰寫。"
+  currentNav="insights"
+>
+  <section class="section">
+    <div class="container">
+      <h1 class="section-title">法律新知</h1>
+      <p class="section-sub">法律其實與生活息息相關。詠業CREDO 的律師與法務團隊，把企業經營與個人資產保障中最常見的法律問題，寫成人人看得懂的實務解析。</p>
+      <CategoryNav />
+      <InsightList posts={posts} />
+    </div>
+  </section>
+
+  <section class="section section--alt cta">
+    <div class="container">
+      <h2>有法律問題想諮詢？</h2>
+      <a class="btn" href={LINE_URL} target="_blank" rel="noopener">聯絡我們</a>
+    </div>
+  </section>
+</Base>

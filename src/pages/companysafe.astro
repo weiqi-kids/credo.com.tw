@@ -1,0 +1,49 @@
+---
+import Base from "../layouts/Base.astro";
+const base = import.meta.env.BASE_URL;
+
+const CARDS = [
+  {
+    title: "公司初期",
+    body: "在員工數不多且業績尚不穩定期間，我們提供訂閱的法律服務，最低2000元起，公司即可擁有上市公司等級的線上法務服務！",
+  },
+  {
+    title: "高速衝鋒期",
+    body: "業績大量發展期間，很多風險隨即伴隨而來，尤其在合約簽訂與勞資管理尤其常常會有糾紛。而詠業提供專業的律師、法務及面詢服務且運用自身資源媒合業界高手駐場顧問提供技術指導。",
+  },
+  {
+    title: "穩定發展",
+    body: "您公司穩定發展後，一定不想讓營業秘密成為剽竊目標，所以詠業會派團隊ISO資安認證顧問輔以我們代理的資安系統將公司安全做好資訊防護。而專利維權的大內高手，也在詠業策略合作下更加穩固您的專利商標。",
+  },
+];
+---
+<Base
+  title="企業安全 — 詠業商略顧問有限公司"
+  description="企業安全，詠業給您的解決方案：公司初期法律訂閱、高速衝鋒期合約與勞資風控、穩定發展期營業秘密與資安防護。"
+  currentNav="companysafe"
+>
+  <section class="hero arrow-divider" style={`background-image:url('${base}images/card-corporate.png')`}>
+    <div class="container">
+      <h1>企業安全<br />詠業給您的解決方案</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="card-grid">
+        {CARDS.map((c) => (
+          <div class="svc-card">
+            <h3>{c.title}</h3>
+            <p>{c.body}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta">
+    <div class="container">
+      <a class="btn btn--ghost" href={base}>回首頁</a>
+    </div>
+  </section>
+</Base>

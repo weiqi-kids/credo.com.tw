@@ -1,35 +1,5 @@
-/* 詠業商略顧問有限公司 credo.com.tw — 靜態復刻
- * 規範：全站顏色一律 oklch token；字級一律 --text-* 階梯（禁 px 硬編、禁 !important）。
- * 色票來源：原站 Elementor CSS（#CDAD7D / #E8D1AE / #DBBF94 / #F4F1EC / #A2ACB0F7 / #000）轉 oklch。 */
-
-:root {
-  /* —— 配色（oklch）—— */
-  --brand: oklch(0.764 0.074 77.4);        /* 金棕主色 #CDAD7D */
-  --brand-mid: oklch(0.818 0.065 78.3);    /* 淺金 #DBBF94 */
-  --brand-light: oklch(0.871 0.053 78.3);  /* 更淺金 #E8D1AE */
-  --paper: oklch(0.959 0.007 80.7);        /* 暖米白底 #F4F1EC */
-  --surface: oklch(1 0 0);                 /* 卡片白 */
-  --ink: oklch(0.18 0.01 80);              /* 主文字（暖近黑） */
-  --ink-soft: oklch(0.42 0.012 80);        /* 次要文字 */
-  --line: oklch(0.87 0.02 80);             /* 邊線 */
-  --overlay: oklch(0.738 0.013 223.6 / 0.75); /* 藍灰遮罩 #A2ACB0F7 */
-  --on-brand: oklch(1 0 0);
-
-  /* —— 字級階梯（唯一允許的 font-size 來源）—— */
-  --text-xs: 0.8rem;
-  --text-sm: 0.9rem;
-  --text-base: 1.05rem;
-  --text-lg: 1.3rem;
-  --text-xl: 1.6rem;
-  --text-2xl: clamp(1.7rem, 1.3rem + 1.8vw, 2.2rem);
-  --text-3xl: clamp(2rem, 1.5rem + 2.4vw, 2.8rem);
-
-  --radius-sm: 6px;
-  --radius-md: 12px;
-  --radius-lg: 20px;
-  --shadow: 0 4px 18px oklch(0.3 0.02 80 / 0.12);
-  --container: 1140px;
-}
+/* 全站版型樣式：顏色只取 tokens.css 的 var(--…)，字級只取 var(--text-*)。 */
+@import "./tokens.css";
 
 * { box-sizing: border-box; }
 
@@ -37,9 +7,9 @@ html { font-size: 100%; }
 
 body {
   margin: 0;
-  font-family: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", "Roboto", sans-serif;
+  font-family: var(--font-sans);
   font-size: var(--text-base);
-  line-height: 1.75;
+  line-height: var(--leading);
   color: var(--ink);
   background: var(--paper);
 }
@@ -63,10 +33,11 @@ a { color: var(--brand); }
 /* —— Header —— */
 .site-header {
   background: var(--surface);
-  border-bottom: 1px solid oklch(0.3 0.02 80 / 0.1);
+  border-bottom: 1px solid var(--line);
 }
 .site-header .container {
   display: flex; align-items: center; justify-content: space-between;
+  gap: 1rem; flex-wrap: wrap;
   padding-top: 0.6rem; padding-bottom: 0.6rem;
 }
 .site-logo img { height: clamp(44px, 6vw, 64px); width: auto; }
@@ -74,9 +45,9 @@ a { color: var(--brand); }
 .site-nav a {
   color: var(--ink); text-decoration: none; font-size: var(--text-sm); font-weight: 500;
 }
-.site-nav a:hover { color: var(--brand); }
+.site-nav a:hover, .site-nav a[aria-current="page"] { color: var(--brand); }
 
-/* —— Hero（含底部箭頭 shape divider，仿 Elementor）—— */
+/* —— Hero（含底部箭頭 shape divider，仿原站 Elementor）—— */
 .hero {
   position: relative;
   background-size: cover;
@@ -86,12 +57,10 @@ a { color: var(--brand); }
 }
 .hero::before {
   content: ""; position: absolute; inset: 0;
-  background: linear-gradient(100deg, oklch(0.98 0.005 80 / 0.88) 0%, oklch(0.98 0.005 80 / 0.55) 55%, transparent 100%);
+  background: linear-gradient(100deg, var(--hero-veil) 0%, var(--hero-veil-mid) 55%, transparent 100%);
 }
 .hero > .container { position: relative; }
 .hero .lead { max-width: 46em; font-size: var(--text-base); color: var(--ink-soft); }
-.hero--home { background-image: url("../img/hero-home.png"); }
-.hero--life { background-image: url("../img/hero-life.png"); }
 .arrow-divider { position: relative; }
 .arrow-divider::after {
   content: ""; position: absolute; left: 50%; bottom: -1px;
@@ -151,7 +120,6 @@ a { color: var(--brand); }
   color: var(--on-brand);
   font-size: var(--text-xl); font-weight: 700;
   letter-spacing: 0.2em;
-  text-shadow: 0 1px 6px oklch(0.2 0.02 240 / 0.5);
 }
 
 /* —— 三欄服務卡（企業安全／個人安全）—— */
@@ -163,12 +131,11 @@ a { color: var(--brand); }
   box-shadow: var(--shadow);
   padding: 1.8rem 1.6rem;
 }
-.svc-card h3 { color: var(--ink); }
 .svc-card h3::after {
   content: ""; display: block; width: 2.4em; height: 3px;
   background: var(--brand); margin-top: 0.5rem;
 }
-.svc-card p { color: var(--ink-soft); font-size: var(--text-base); margin-bottom: 0; }
+.svc-card p { color: var(--ink-soft); margin-bottom: 0; }
 
 /* —— 服務流程步驟 —— */
 .steps { display: grid; gap: 1.5rem; grid-template-columns: 1fr; counter-reset: step; }
@@ -250,18 +217,22 @@ a { color: var(--brand); }
 .breadcrumb { font-size: var(--text-sm); color: var(--ink-soft); margin-bottom: 1.5rem; }
 .breadcrumb a { color: var(--ink-soft); }
 
+.faq-block { margin-top: 2rem; }
+.faq-block dt { font-weight: 700; margin-top: 1.2em; }
+.faq-block dd { margin: 0.3em 0 0; color: var(--ink-soft); }
+
 /* —— CTA —— */
 .cta { text-align: center; }
 .cta .btn { margin-top: 0.5rem; }
 
 /* —— Footer —— */
 .site-footer {
-  background: var(--ink); color: oklch(0.85 0.01 80);
+  background: var(--ink); color: var(--on-dark);
   text-align: center; padding: 1.6rem 1rem;
   font-size: var(--text-sm);
 }
 
-/* —— 斷點（mobile-first，僅 min-width）—— */
+/* —— 斷點（mobile-first，僅 min-width：sm 640 / md 768 / lg 1024）—— */
 @media (min-width: 640px) {
   .audience-grid { grid-template-columns: 1fr 1fr; }
   .partner-grid { grid-template-columns: repeat(3, 1fr); }

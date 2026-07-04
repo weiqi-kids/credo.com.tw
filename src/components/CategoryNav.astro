@@ -1,0 +1,14 @@
+---
+import { CATEGORIES } from "../lib/site";
+
+interface Props {
+  current?: string;
+}
+const { current } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+<nav class="cat-nav" aria-label="文章分類">
+  {Object.entries(CATEGORIES).map(([key, c]) => (
+    <a href={`${base}insights/${key}/`} aria-current={current === key ? "page" : undefined}>{c.label}</a>
+  ))}
+</nav>
