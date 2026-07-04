@@ -24,6 +24,16 @@ const base = import.meta.env.BASE_URL;
       <p class="breadcrumb"><a href={base}>首頁</a> › <a href={`${base}insights/`}>法律新知</a> › {cat.label}</p>
       <h1 class="section-title">{cat.label}</h1>
       <p class="section-sub">{cat.description}</p>
+      {cat.cta && (
+        <p class="cta">
+          <a
+            class="btn"
+            href={cat.cta.external ? cat.cta.href : `${base}${cat.cta.href.replace(/^\//, "")}`}
+            target={cat.cta.external ? "_blank" : undefined}
+            rel={cat.cta.external ? "noopener" : undefined}
+          >{cat.cta.label}</a>
+        </p>
+      )}
       <CategoryNav current={category} />
       <InsightList posts={posts} />
     </div>

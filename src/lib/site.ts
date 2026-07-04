@@ -6,7 +6,11 @@ export const SCA_URL = "https://sca-ret.com/";
 export const COPYRIGHT = "版權所有 © 2023 詠業商略顧問有限公司";
 
 // 文章分類＝SEO 關鍵字群（新增分類：這裡＋content.config.ts 的 enum 同步改）
-export const CATEGORIES: Record<string, { label: string; description: string }> = {
+// cta：分類頁在說明下方顯示的方案按鈕（選填）
+export const CATEGORIES: Record<
+  string,
+  { label: string; description: string; cta?: { label: string; href: string; external?: boolean } }
+> = {
   "corporate-legal": {
     label: "企業法務",
     description:
@@ -21,6 +25,7 @@ export const CATEGORIES: Record<string, { label: string; description: string }> 
     label: "退休保障",
     description:
       "退休後的財務安全需要法律與信託雙重把關。從退休規劃、防詐到資金控管，專為退休人士整理的實務指南。",
+    cta: { label: "SCA退休安心 三寶 專為退休人士設計的退休保障方案！", href: SCA_URL, external: true },
   },
 };
 
