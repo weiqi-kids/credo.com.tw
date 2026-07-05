@@ -26,12 +26,41 @@ function rehypeBasePrefix() {
   return (tree) => fix(tree);
 }
 
+// rehype 外掛：內文 <img> 自動包成 <figure class="wrap-left|wrap-right">，
+// 同篇文章左右交錯（文繞圖），img 的 title 屬性轉為 <figcaption>（攝影出處）。
+function rehypeFloatFigures() {
+  return (tree) => {
+    let i = 0;
+    const walk = (node, parent, idx) => {
+      if (node.type === 'element' && node.tagName === 'p' && node.children?.length === 1 &&
+          node.children[0].tagName === 'img') {
+        const img = node.children[0];
+        const side = i % 2 === 0 ? 'wrap-left' : 'wrap-right';
+        i += 1;
+        const caption = img.properties?.title;
+        if (caption) delete img.properties.title;
+        img.properties = { ...img.properties, loading: 'lazy', decoding: 'async' };
+        const fig = {
+          type: 'element', tagName: 'figure', properties: { className: [side] },
+          children: caption
+            ? [img, { type: 'element', tagName: 'figcaption', properties: {}, children: [{ type: 'text', value: caption }] }]
+            : [img],
+        };
+        parent.children[idx] = fig;
+        return;
+      }
+      (node.children || []).forEach((c, j) => walk(c, node, j));
+    };
+    walk(tree, null, 0);
+  };
+}
+
 export default defineConfig({
   site: SITE,
   base: BASE,
   trailingSlash: 'always',
   integrations: [sitemap()],
   markdown: {
-    rehypePlugins: [rehypeBasePrefix],
+    rehypePlugins: [rehypeBasePrefix, rehypeFloatFigures],
   },
 });

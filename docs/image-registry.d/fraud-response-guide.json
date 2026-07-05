@@ -1,0 +1,10 @@
+{
+  "slug": "fraud-response-guide",
+  "cover": { "file": "images/covers/fraud-response-guide.webp", "pexels": 16841808, "photographer": "Viralyft" },
+  "inline": [
+    { "file": "images/inline/fraud-response-guide-1.webp", "pexels": 6831054, "photographer": "Tima Miroshnichenko" },
+    { "file": "images/inline/fraud-response-guide-2.webp", "pexels": 13466250, "photographer": "Towfiqu barbhuiya" },
+    { "file": "images/inline/fraud-response-guide-3.webp", "pexels": 7927424, "photographer": "Nicola Barts" },
+    { "file": "images/inline/fraud-response-guide-4.webp", "pexels": 30268252, "photographer": "Matheus Lara" }
+  ]
+}

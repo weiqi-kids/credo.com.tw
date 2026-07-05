@@ -181,15 +181,32 @@ a { color: var(--brand-deep); }
 /* —— 法律新知（insights 文章區）—— */
 .insight-list { display: grid; gap: 1rem; }
 .insight-item {
-  display: grid; gap: 0.2rem 1rem;
-  grid-template-columns: auto 1fr;
-  grid-template-areas: "cat date" "title title" "desc desc";
+  display: flex; align-items: stretch;
   background: var(--surface); border-radius: var(--radius-md);
-  box-shadow: var(--shadow); padding: 1.2rem 1.4rem;
+  box-shadow: var(--shadow); overflow: hidden;
   text-decoration: none; color: var(--ink);
   border-left: 6px solid var(--brand);
 }
 .insight-item:hover { border-left-color: var(--ink); }
+.insight-body {
+  flex: 1 1 auto; min-width: 0;
+  display: grid; gap: 0.2rem 1rem;
+  grid-template-columns: auto 1fr;
+  grid-template-areas: "cat date" "title title" "desc desc";
+  padding: 1.2rem 1.4rem;
+  align-content: start;
+}
+/* cover 右欄：高度跟卡片一致，直圖上下裁切、橫圖左右裁切（object-fit: cover 置中）。
+   mobile-first：窄幅 32%，≥640px 收為 25%。 */
+.insight-item .insight-cover {
+  flex: 0 0 32%; width: 32%; max-width: 32%;
+  min-height: 100%; height: auto;
+  object-fit: cover; object-position: center;
+  align-self: stretch;
+}
+@media (min-width: 640px) {
+  .insight-item .insight-cover { flex-basis: 25%; width: 25%; max-width: 25%; }
+}
 .insight-cat {
   grid-area: cat; font-size: var(--text-xs); font-weight: 700;
   color: var(--brand-deep); letter-spacing: 0.1em;
@@ -242,6 +259,22 @@ a { color: var(--brand-deep); }
 }
 @media (min-width: 768px) {
   .topic-service ul { grid-template-columns: 1fr 1fr; }
+}
+
+/* —— 內文文繞圖（rehypeFloatFigures 自動包 figure）——
+   mobile-first：窄幅整寬不繞，≥640px 左右交錯文繞圖。 */
+.article figure.wrap-left, .article figure.wrap-right {
+  width: 100%; margin: 1rem 0;
+}
+.article figure img { border-radius: var(--radius-md); box-shadow: var(--shadow); width: 100%; }
+.article figure figcaption { font-size: var(--text-xs); color: var(--ink-soft); margin-top: 0.3rem; }
+.article h2 { clear: both; }
+@media (min-width: 640px) {
+  .article figure.wrap-left, .article figure.wrap-right {
+    width: min(42%, 340px); margin: 0.3rem 0 0.8rem;
+  }
+  .article figure.wrap-left { float: left; margin-right: 1.4rem; }
+  .article figure.wrap-right { float: right; margin-left: 1.4rem; }
 }
 
 .faq-block { margin-top: 2rem; }

@@ -1,0 +1,10 @@
+{
+  "slug": "non-compete-guide",
+  "cover": {"file": "images/covers/non-compete-guide.webp", "pexels": 6424590, "photographer": "Nemuel Sereti"},
+  "inline": [
+    {"file": "images/inline/non-compete-guide-1.webp", "pexels": 3888151, "photographer": "Rodrigo Santos"},
+    {"file": "images/inline/non-compete-guide-2.webp", "pexels": 28993080, "photographer": "Matheus Bertelli"},
+    {"file": "images/inline/non-compete-guide-3.webp", "pexels": 10816120, "photographer": "Stanislav Kondratiev"},
+    {"file": "images/inline/non-compete-guide-4.webp", "pexels": 6424584, "photographer": "Nemuel Sereti"}
+  ]
+}

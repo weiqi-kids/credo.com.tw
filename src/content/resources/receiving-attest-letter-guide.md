@@ -16,11 +16,16 @@ faq:
     a: 沒有正當理由拒絕收件，仍視為合法送達，退回的信封與郵局註記本身就是證據。刻意不收信不會讓這封信「沒發生過」，反而可能讓對方掌握你迴避的紀錄。
   - q: 收到後完全不理會，最壞會怎樣？
     a: 存證信函本身不會自動變成法院文件，但長期不理會可能讓對方接下來聲請支付命令、聲請本票裁定或直接起訴，屆時程序期限更緊迫、迴旋空間更小。及早釐清立場比拖到收到法院文件才處理更划算。
+cover: images/covers/receiving-attest-letter-guide.webp
+coverAlt: 復古明信片與信封用麻繩束綁陳列
+coverCredit: Photo by Ylanite Koppens on Pexels
 ---
 
 存證信函躺在信箱裡，先別急著回信也別急著撕掉，今天只做一件事：把信封和信函本身完整保留下來，看懂對方到底在主張什麼，再決定下一步。
 
 ## 現在就做的 6 件事
+
+![感謝卡與米色信封平拍](/images/inline/receiving-attest-letter-guide-1.webp "Photo by Towfiqu barbhuiya on Pexels")
 
 ### 1. 先保留信封，別急著讀信文
 
@@ -48,6 +53,8 @@ faq:
 
 ## 存證信函逐段拆解：看什麼、什麼情況別簽別回
 
+![牛皮紙信封與空白卡片極簡平拍](/images/inline/receiving-attest-letter-guide-2.webp "Photo by Karola G on Pexels")
+
 存證信函由幾個固定區塊組成，拆信時照這個順序看，比從頭讀到尾更快抓到重點。
 
 **收發雙方欄位**：核對姓名、地址、統一編號是否正確，資訊有誤先別急著否認整封信，可留到回應時一併指出。
@@ -63,6 +70,8 @@ faq:
 先別簽字、別馬上承諾金額：對方要求在回執上簽名確認金額、要求簽署新的還款協議書或本票、對信函陳述的事實有疑義卻還沒查證。簽名一旦做出，事後要推翻會困難得多。
 
 ## 千萬別做的事
+
+![手持文件紙張特寫辦公桌](/images/inline/receiving-attest-letter-guide-3.webp "Photo by Katrin Bolovtsova on Pexels")
 
 ### 別放著不理，當作沒收到
 
@@ -91,6 +100,8 @@ faq:
 | 平時盤點債權時效 | 一般15年，買賣貨款2年，票據3年 | 民法第125條、第127條第8款；票據法第22條第1項 |
 
 ## 什麼情況這份清單不夠用
+
+![復古信件用麻繩綑綁堆疊](/images/inline/receiving-attest-letter-guide-4.webp "Photo by Suzy Hazelwood on Pexels")
 
 **金額龐大或對方已表明準備聲請強制執行、假扣押**：錯一步的成本愈高，需要律師協助評估回應策略。
 

@@ -1,0 +1,10 @@
+{
+  "slug": "family-trust-guide",
+  "cover": {"file": "images/covers/family-trust-guide.webp", "pexels": 35727968, "photographer": "Alisa Skripina"},
+  "inline": [
+    {"file": "images/inline/family-trust-guide-1.webp", "pexels": 8112112, "photographer": "Pavel Danilyuk"},
+    {"file": "images/inline/family-trust-guide-2.webp", "pexels": 5669602, "photographer": "Sora Shimazaki"},
+    {"file": "images/inline/family-trust-guide-3.webp", "pexels": 6863330, "photographer": "Nataliya Vaitkevich"},
+    {"file": "images/inline/family-trust-guide-4.webp", "pexels": 5668795, "photographer": "Sora Shimazaki"}
+  ]
+}

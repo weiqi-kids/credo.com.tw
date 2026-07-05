@@ -6,6 +6,9 @@ category: corporate-legal
 topic: contract-basics
 kind: pillar
 keywords: 合約範本, 報價單效力, 定型化契約, 簽約注意事項, 電子簽章, 違約金
+cover: images/covers/contract-signing-checklist.webp
+coverAlt: 一男一女在辦公室裡握手，象徵簽約合作達成共識
+coverCredit: Photo by Sora Shimazaki on Pexels
 faq:
   - q: 報價單有法律效力嗎？對方回傳報價單我就要出貨嗎？
     a: 要看報價單怎麼來的。單純寄送的價目表通常只是「要約引誘」，沒有拘束力；但如果是針對客戶詢價需求specifically 提出的報價，可能已構成「要約」，對方一旦表示接受就成立契約，要出貨或付款都可能被要求履行，收到報價前最好先確認雙方的真意與後續流程。
@@ -22,6 +25,8 @@ faq:
 正要簽下一份合約，或是手上握著一份等對方回簽的報價單，卻不確定「簽下去」到底代表什麼？很多中小企業的糾紛，輸在簽約當下沒看懂條款、沒留證據，而非打官司的技巧。看完這篇，你會知道簽約前該檢查哪些重點，避免日後求償無門。
 
 ## 簽約前必看的 8 個檢查點
+
+![用放大鏡仔細檢視合約文件內容](/images/inline/contract-signing-checklist-1.webp "Photo by Yan Krukau on Pexels")
 
 ### 1. 報價單、估價單算不算「成交」
 
@@ -57,6 +62,8 @@ faq:
 
 ## 常見迷思破解
 
+![女性在辦公桌前手持文件夾檢視合約內容](/images/inline/contract-signing-checklist-2.webp "Photo by Pavel Danilyuk on Pexels")
+
 **很多人以為「先簽再說，細節之後再談」，其實契約一旦成立就受拘束。** 要約經對方接受即成立契約，事後想單方面修改內容，除非對方同意，否則很難片面變更，「先簽再補」往往補的是自己的風險。
 
 **很多人以為「反正認識、口頭講好就算數」，其實糾紛發生時舉證責任在自己。** 沒有留下書面或明確紀錄，一旦對方翻臉不認帳，你很可能拿不出任何證據證明雙方談好的內容。
@@ -65,9 +72,13 @@ faq:
 
 ## 費用與流程行情
 
+![木質書桌上放著計算機與筆，計算合約審閱與擬定費用](/images/inline/contract-signing-checklist-3.webp "Photo by Skylar Kang on Pexels")
+
 律師審閱一份合約的費用，行情約以份數與頁數、條款複雜程度計價，簡單的定型化合約與複雜的長期合作合約價差可以很大；若需要律師從頭擬定客製化合約，費用通常會比單純審閱更高，實際報價會依交易金額、風險程度及是否需要多輪協商而不同。時間上，單純審閱一份合約通常數個工作天內可完成；若牽涉多方協商修改條款，則視雙方往返次數而定。確切費用與所需時間，建議直接向律師事務所洽詢報價為準。
 
 ## 什麼時候該找律師
+
+![團隊成員在辦公室會議中討論合約細節](/images/inline/contract-signing-checklist-4.webp "Photo by RDNE Stock project on Pexels")
 
 **合約金額龐大或屬長期合作關係時**，例如經銷代理、加盟授權、技術授權等，條款設計會直接影響未來數年的權利義務，值得在簽約前先請律師把關。
 

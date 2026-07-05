@@ -19,11 +19,14 @@ const moreHref = category ? `${base}insights/${category}/` : `${base}insights/`;
       <h2 class="section-title">最新法律新知</h2>
       <div class="insight-list">
         {posts.map((p) => (
-          <a class="insight-item" href={`${base}${postPath(p)}`}>
-            <span class="insight-cat">{CATEGORIES[p.data.category].label}</span>
-            <span class="insight-title">{p.data.title}</span>
-            <span class="insight-date">{p.data.date}</span>
-            <span class="insight-desc">{p.data.description}</span>
+          <a class={`insight-item${p.data.cover ? " has-cover" : ""}`} href={`${base}${postPath(p)}`}>
+            <span class="insight-body">
+              <span class="insight-cat">{CATEGORIES[p.data.category].label}</span>
+              <span class="insight-title">{p.data.title}</span>
+              <span class="insight-date">{p.data.date}</span>
+              <span class="insight-desc">{p.data.description}</span>
+            </span>
+            {p.data.cover && <img class="insight-cover" src={`${base}${p.data.cover}`} alt={p.data.coverAlt || p.data.title} loading="lazy" decoding="async" />}
           </a>
         ))}
       </div>

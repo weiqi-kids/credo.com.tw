@@ -1,0 +1,10 @@
+{
+  "slug": "iso27001-guide",
+  "cover": {"file": "images/covers/iso27001-guide.webp", "pexels": 1054397, "photographer": "Josh Sorenson"},
+  "inline": [
+    {"file": "images/inline/iso27001-guide-1.webp", "pexels": 4330787, "photographer": "Brett Sayles"},
+    {"file": "images/inline/iso27001-guide-2.webp", "pexels": 2881233, "photographer": "Brett Sayles"},
+    {"file": "images/inline/iso27001-guide-3.webp", "pexels": 4508748, "photographer": "Brett Sayles"},
+    {"file": "images/inline/iso27001-guide-4.webp", "pexels": 5483240, "photographer": "cottonbro studio"}
+  ]
+}

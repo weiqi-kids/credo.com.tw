@@ -43,6 +43,10 @@ const insights = defineCollection({
       court: z.string().optional(),
       keywords: z.string().default(""),
       author: z.string().default("詠業CREDO 法務團隊"),
+      // 封面圖（列表卡右欄＋og:image）：相對 public/ 路徑，如 images/covers/x.webp
+      cover: z.string().optional(),
+      coverAlt: z.string().default(""),
+      coverCredit: z.string().default(""),
       // 選填：文內 FAQ（渲染成可見區塊＋FAQPage schema，AEO 用）
       faq: z.array(z.object({ q: z.string(), a: z.string() })).default([]),
     })
@@ -62,6 +66,9 @@ const resources = defineCollection({
       topic: topicField,
       audience: z.string(), // 給誰用：如「求職者/新進員工」「房客」「家屬」
       moment: z.string(), // 關鍵時間點：如「到職簽署文件時」「家人過世後 30 天內」
+      cover: z.string().optional(),
+      coverAlt: z.string().default(""),
+      coverCredit: z.string().default(""),
       draft: z.boolean().default(false),
       keywords: z.string().default(""),
       author: z.string().default("詠業CREDO 法務團隊"),

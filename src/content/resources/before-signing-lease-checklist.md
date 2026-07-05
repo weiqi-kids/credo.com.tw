@@ -16,11 +16,16 @@ faq:
     a: 契約若約定房客可以提前終止，依應記載事項第14點，任一方要提前至少1個月通知對方；沒有先通知就逕行終止，最高只能被要求賠1個月租金的違約金，房東不能任意加碼扣光押金。
   - q: 想把房間分租給朋友，需要先問房東嗎？
     a: 需要。民法第443條規定，房屋以外的租賃物轉租須經出租人同意，房屋部分轉租雖有較寬鬆空間，但契約另有禁止約定時仍不能轉租。未經同意轉租，房東可以依此終止契約，收回房子。
+cover: images/covers/before-signing-lease-checklist.webp
+coverAlt: 房仲遞交房屋鑰匙
+coverCredit: Photo by Kampus Production on Pexels
 ---
 
 合約攤在桌上，房東等你簽名的那一刻，才是租屋風險真正決定勝負的時刻。先別動筆，照這份清單一項一項核對。
 
 ## 現在就做的7件事
+
+![情侶展示新家鑰匙](/images/inline/before-signing-lease-checklist-1.webp "Photo by RDNE Stock project on Pexels")
 
 ### 1. 先要求審閱期，別當場簽
 
@@ -52,6 +57,8 @@ faq:
 
 ## 租約逐條檢查與應記載事項對照
 
+![雙手指向書桌合約與筆電](/images/inline/before-signing-lease-checklist-2.webp "Photo by kaboompics.com on Pexels")
+
 | 條款重點 | 官方規定 | 簽約時看什麼 |
 |---|---|---|
 | 押金 | 不得逾2個月租金總額，租賃住宅市場發展及管理條例第7條 | 契約寫的金額是否超標，退還條件是否寫明 |
@@ -63,6 +70,8 @@ faq:
 | 戶籍與報稅 | 不得禁止房客遷入戶籍或申報租金支出，不得記載事項 | 契約有無限制房客報稅或設籍 |
 
 ## 千萬別做的事
+
+![床上紙箱與行李箱搬家俯拍](/images/inline/before-signing-lease-checklist-3.webp "Photo by Ketut Subiyanto on Pexels")
 
 **別因為房東說「大家都這樣簽」就跳過審閱期。** 審閱期是法定權利，當場簽等於放棄了發現問題的最後機會。
 
@@ -83,6 +92,8 @@ faq:
 | 欠租達2個月 | 房東才可定期催告後終止契約 | 民法第440條、租賃住宅市場發展及管理條例第10條 |
 
 ## 什麼情況這份清單不夠用
+
+![一家人拆箱整理新家廚房](/images/inline/before-signing-lease-checklist-4.webp "Photo by cottonbro studio on Pexels")
 
 **簽約對象不是所有權人，授權文件看起來不完整。** 委託書範圍模糊、簽名筆跡有疑慮，或對方拿不出屋主本人的證件核對，這種情況下自行判斷風險很高，該請律師協助確認代理權限是否有效。
 

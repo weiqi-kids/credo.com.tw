@@ -19,11 +19,14 @@ const base = import.meta.env.BASE_URL;
       <p class="section-sub">事情發生的當下，先照著清單做。每一份工具都對應一個關鍵時刻：該簽什麼、該注意什麼、該保存什麼，以及什麼情況該直接找律師。</p>
       <div class="insight-list">
         {tools.map((t) => (
-          <a class="insight-item" href={`${base}resources/${t.id}/`}>
-            <span class="insight-cat">{t.data.moment}</span>
-            <span class="insight-title">{t.data.title}</span>
-            <span class="insight-date">給{t.data.audience}</span>
-            <span class="insight-desc">{t.data.description}</span>
+          <a class={`insight-item${t.data.cover ? " has-cover" : ""}`} href={`${base}resources/${t.id}/`}>
+            <span class="insight-body">
+              <span class="insight-cat">{t.data.moment}</span>
+              <span class="insight-title">{t.data.title}</span>
+              <span class="insight-date">給{t.data.audience}</span>
+              <span class="insight-desc">{t.data.description}</span>
+            </span>
+            {t.data.cover && <img class="insight-cover" src={`${base}${t.data.cover}`} alt={t.data.coverAlt || t.data.title} loading="lazy" decoding="async" />}
           </a>
         ))}
       </div>

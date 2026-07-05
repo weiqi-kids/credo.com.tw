@@ -6,6 +6,9 @@ category: personal-asset
 topic: property-transactions
 kind: pillar
 keywords: 預售屋解約, 漏水瑕疵擔保, 履約保證, 房屋買賣流程, 房地合一稅, 交屋糾紛
+cover: images/covers/home-purchase-dispute-guide.webp
+coverAlt: 陽光下的台式傳統住宅外觀
+coverCredit: Photo by Sunny Li on Pexels
 faq:
   - q: 預售屋解約最多會被沒收多少錢？
     a: 內政部規定的預售屋買賣定型化契約中，買方違約時賣方可沒收的金額上限為房地總價款的 15%，若已繳價款不到 15%，則以已繳金額為限。實際比例仍需對照契約條款與繳款進度計算。
@@ -20,6 +23,8 @@ faq:
 正要簽約買房、或剛拿到建商的用印/交屋通知，卻不確定契約上的違約金、保固期限是否合理嗎？房屋買賣金額大、流程長，從斡旋、簽約到交屋任何一個環節疏忽，都可能演變成數十萬甚至數百萬元的糾紛。看完這篇，你會知道簽約前該核對哪些條款、漏水責任怎麼認定，以及什麼情況該找律師把關。
 
 ## 買賣簽約前必看的7個檢查點
+
+![驗屋人員手持檢查清單核對房屋狀況](/images/inline/home-purchase-dispute-guide-1.webp "Photo by RDNE Stock project on Pexels")
 
 ### 1. 先問清楚履約保證用哪一種
 
@@ -51,6 +56,8 @@ faq:
 
 ## 常見迷思破解
 
+![工人在屋頂上進行修繕作業](/images/inline/home-purchase-dispute-guide-2.webp "Photo by Hanna Payasnikava on Pexels")
+
 **很多人以為付了斡旋金就等於成交，其實不然。** 斡旋金只是買方表達購買意願、委託仲介協調的款項，正式契約成立前仍有變數，賣方接受斡旋不代表法律上已經成交，實際權利義務仍以雙方正式簽署的買賣契約為準。
 
 **很多人以為漏水保固期一過就求償無門，其實民法另有規定。** 契約保固期只是其中一層保障，法律上的物之瑕疵擔保責任另有各自的主張期限，兩者要分開檢視，不能單看契約保固期就放棄求償的可能性。
@@ -59,9 +66,13 @@ faq:
 
 ## 費用與流程行情
 
+![房仲將鑰匙交給買方，象徵交屋完成](/images/inline/home-purchase-dispute-guide-3.webp "Photo by Thirdman on Pexels")
+
 房屋買賣的付款節奏，市場上常見的行情是：斡旋金／訂金約總價的 1% 至 2%，簽約時再補足到約 10%，接著依用印、完稅、交屋等階段分期給付，交屋前最後一筆款項比例通常最高。實際比例、期數與付款時點，都以雙方簽署的買賣契約與付款明細表為準，仲介服務費、代書規費等費用也應在委託前逐項問清楚，避免行情之外還有隱藏費用。
 
 ## 什麼時候該找律師
+
+![手部特寫填寫法律文件表格](/images/inline/home-purchase-dispute-guide-4.webp "Photo by RDNE Stock project on Pexels")
 
 - **建商遲遲不交屋、或交屋日期一延再延**：想確認自己是否可以主張違約責任、解約或求償，需要對照契約條款判斷。
 - **收到建商存證信函，要求限期用印、完稅或交屋**：不確定期限是否合理、不配合會有什麼後果時，建議先諮詢再回應，避免權益受損或誤觸違約。

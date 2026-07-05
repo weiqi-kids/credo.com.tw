@@ -9,8 +9,9 @@ interface Props {
   schemas?: object[];
   currentNav?: string; // 對應 nav key：companysafe / naturalpersonsafe / startup / insights
   preloadImage?: string; // LCP 圖（CSS background 瀏覽器發現得晚，需 preload），相對 base 路徑如 "images/hero-home.webp"
+  ogImage?: string; // 分享縮圖，相對 base 路徑（如 images/covers/x.webp）；未給用 logo
 }
-const { title, description, schemas = [], currentNav, preloadImage } = Astro.props;
+const { title, description, schemas = [], currentNav, preloadImage, ogImage } = Astro.props;
 
 const base = import.meta.env.BASE_URL; // 含尾斜線
 const canonical = new URL(Astro.url.pathname, Astro.site);
@@ -35,7 +36,7 @@ const NAV = [
 <meta property="og:description" content={description} />
 <meta property="og:type" content="website" />
 <meta property="og:url" content={canonical} />
-<meta property="og:image" content={new URL(`${base}images/logo.png`, Astro.site)} />
+<meta property="og:image" content={new URL(`${base}${ogImage || "images/logo.png"}`, Astro.site)} />
 <link rel="sitemap" href={`${base}sitemap-index.xml`} />
 {preloadImage && <link rel="preload" as="image" href={`${base}${preloadImage}`} fetchpriority="high" />}
 {[orgSchema(), ...schemas].map((s) => (

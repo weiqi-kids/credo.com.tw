@@ -29,6 +29,8 @@ jobs:
         run: node scripts/check-fontsize.mjs
       - name: AI-tone gate
         run: node scripts/audit-ai-tone.mjs
+      - name: Image gate
+        run: node scripts/audit-images.mjs
       - name: Build with Astro
         uses: withastro/action@v3
         with:
