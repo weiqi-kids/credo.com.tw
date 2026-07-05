@@ -72,7 +72,7 @@ coverCredit: Photo by Sandy Torchon on Pexels
 
 ## 費用與流程行情
 
-![照護者從背後推著坐輪椅的長者](/images/inline/advance-directive-guide-3.webp "Photo by Jsme MILA on Pexels")
+![醫護人員從側後方推著輪椅的手部特寫](/images/inline/advance-directive-guide-3.webp "Photo by RDNE Stock project on Pexels")
 
 預立醫療照護諮商的費用依身分別落差不小。健保近年已擴大給付對象，包括 65 歲以上具重大傷病資格者，以及參加醫院「家醫整合性照護計畫」或「全人全社區照護計畫」的 65 歲以上多重慢性病患，完成簽署後諮商費用由健保支付，本人通常不需自費；實際給付範圍與金額仍請以健保署與各醫療機構最新公告為準。
 
@@ -82,7 +82,7 @@ coverCredit: Photo by Sandy Torchon on Pexels
 
 ## 什麼時候該找律師
 
-![雙手在桌上處理文件與筆的特寫](/images/inline/advance-directive-guide-4.webp "Photo by Camila Bou on Pexels")
+![雙手在桌上處理文件與筆的特寫](/images/inline/advance-directive-guide-4.webp "Photo by Kampus Production on Pexels")
 
 **指定的醫療委任代理人跟未來的繼承人身份重疊時**，例如擬指定的代理人同時是遺囑主要受益人，最好先確認角色安排不會踩到「不得為醫療委任代理人」的限制。
 

@@ -26,7 +26,7 @@ faq:
 
 ## 出租與承租前必看的7個檢查點
 
-![房仲帶客戶看房，介紹物件狀況](/images/inline/rental-contract-guide-1.webp "Photo by Alena Darmel on Pexels")
+![東亞面孔房客獨自走進出租公寓看屋](/images/inline/rental-contract-guide-1.webp "Photo by cottonbro studio on Pexels")
 
 ### 1. 押金金額有沒有超過法定上限
 
@@ -58,7 +58,7 @@ faq:
 
 ## 常見迷思破解
 
-![雙手交接附有房屋吊飾的鑰匙](/images/inline/rental-contract-guide-2.webp "Photo by Pavel Danilyuk on Pexels")
+![東亞面孔房仲與租客握手交接鑰匙](/images/inline/rental-contract-guide-2.webp "Photo by Mikhail Nilov on Pexels")
 
 **迷思一：押金想收多少是房東的自由。** 其實住宅租賃的押金金額有法定上限，即2個月租金，超收部分約定無效，還可能被檢舉、限期改善不成就開罰。
 
@@ -68,7 +68,7 @@ faq:
 
 ## 費用與流程行情
 
-![房仲向租客介紹客廳空間](/images/inline/rental-contract-guide-3.webp "Photo by MART PRODUCTION on Pexels")
+![東亞面孔一家人坐在客廳沙發上，感受居住空間](/images/inline/rental-contract-guide-3.webp "Photo by Annushka Ahuja on Pexels")
 
 **存證信函催告**：透過郵局寄發，費用通常是幾十元起，依張數與份數而定，是主張終止契約前最基本、成本最低的證據保全動作。
 
@@ -84,7 +84,7 @@ faq:
 
 ## 什麼時候該找律師
 
-![房仲人員將鑰匙交給租客](/images/inline/rental-contract-guide-4.webp "Photo by Kindel Media on Pexels")
+![東亞面孔房仲手持鑰匙與保單文件，準備交給租客](/images/inline/rental-contract-guide-4.webp "Photo by Mikhail Nilov on Pexels")
 
 **房客積欠租金已達法定門檻，考慮終止契約前。** 欠租金額怎麼算、押金要不要先扣抵、催告期限怎麼寫才有效，一步錯就可能讓終止契約的主張站不住腳，事前確認程序比事後補救省事得多。
 

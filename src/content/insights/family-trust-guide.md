@@ -7,8 +7,8 @@ topic: trust-succession
 kind: pillar
 keywords: 遺囑信託, 保險金信託, 家族信託 門檻, 信託傳承, 財產傳承規劃, 保險金信託費用
 cover: images/covers/family-trust-guide.webp
-coverAlt: 古典保險箱門與鑰匙孔特寫，象徵財富保護與傳承
-coverCredit: Photo by Alisa Skripina on Pexels
+coverAlt: 銀行保險箱鎖具排列特寫，象徵財富保護與傳承
+coverCredit: Photo by Orhan Pergel on Pexels
 faq:
   - q: 遺囑信託和一般遺囑有什麼不一樣？
     a: 依信託法第2條，遺囑信託是用遺囑這個法定方式成立信託，委託人在遺囑中指定受託人與受益人，身故後財產會依信託條款分期、分階段管理與給付，而非一次交付。它仍須符合民法遺囑的法定方式，例如公證遺囑、代筆遺囑，才有效，它是遺囑的進階應用，並不取代遺囑。
@@ -26,7 +26,7 @@ faq:
 
 ## 信託傳承規劃前必看的 7 個檢查點
 
-![律師在辦公桌前使用筆電工作](/images/inline/family-trust-guide-1.webp "Photo by Pavel Danilyuk on Pexels")
+![律師若有所思地在辦公桌前使用筆電工作](/images/inline/family-trust-guide-1.webp "Photo by Sora Shimazaki on Pexels")
 
 ### 1. 先搞懂「遺囑信託」到底是什麼
 
@@ -81,7 +81,7 @@ faq:
 
 ## 什麼時候該找律師
 
-![兩位專業人士在辦公室裡討論文件](/images/inline/family-trust-guide-4.webp "Photo by Sora Shimazaki on Pexels")
+![多位同事在辦公室裡討論文件](/images/inline/family-trust-guide-4.webp "Photo by Artem Podrez on Pexels")
 
 - 想同時安排「身後財產分配」與「未成年子女或失能家人的長期照顧」，遺囑信託牽涉遺囑效力與信託條款設計，一個環節沒寫對，整份就可能無效。
 - 保單受益人是未成年人或身心障礙者，擔心大筆保險金一次到手被亂花，需要規劃保險金信託的給付方式與條件。

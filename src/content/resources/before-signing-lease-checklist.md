@@ -17,15 +17,15 @@ faq:
   - q: 想把房間分租給朋友，需要先問房東嗎？
     a: 需要。民法第443條規定，房屋以外的租賃物轉租須經出租人同意，房屋部分轉租雖有較寬鬆空間，但契約另有禁止約定時仍不能轉租。未經同意轉租，房東可以依此終止契約，收回房子。
 cover: images/covers/before-signing-lease-checklist.webp
-coverAlt: 房仲遞交房屋鑰匙
-coverCredit: Photo by Kampus Production on Pexels
+coverAlt: 東亞面孔女性在文件夾上簽署租賃合約
+coverCredit: Photo by Mikhail Nilov on Pexels
 ---
 
 合約攤在桌上，房東等你簽名的那一刻，才是租屋風險真正決定勝負的時刻。先別動筆，照這份清單一項一項核對。
 
 ## 現在就做的7件事
 
-![情侶展示新家鑰匙](/images/inline/before-signing-lease-checklist-1.webp "Photo by RDNE Stock project on Pexels")
+![台北公寓街景，看屋前先確認物件與周邊環境](/images/inline/before-signing-lease-checklist-1.webp "Photo by Jimmy Liao on Pexels")
 
 ### 1. 先要求審閱期，別當場簽
 
@@ -57,7 +57,7 @@ coverCredit: Photo by Kampus Production on Pexels
 
 ## 租約逐條檢查與應記載事項對照
 
-![雙手指向書桌合約與筆電](/images/inline/before-signing-lease-checklist-2.webp "Photo by kaboompics.com on Pexels")
+![雙手持中文謄本文件核對內容](/images/inline/before-signing-lease-checklist-2.webp "Photo by Ninh Tien Dat on Pexels")
 
 | 條款重點 | 官方規定 | 簽約時看什麼 |
 |---|---|---|
@@ -93,7 +93,7 @@ coverCredit: Photo by Kampus Production on Pexels
 
 ## 什麼情況這份清單不夠用
 
-![一家人拆箱整理新家廚房](/images/inline/before-signing-lease-checklist-4.webp "Photo by cottonbro studio on Pexels")
+![一家三口在新家廚房整理採買提袋](/images/inline/before-signing-lease-checklist-4.webp "Photo by ShotPot on Pexels")
 
 **簽約對象不是所有權人，授權文件看起來不完整。** 委託書範圍模糊、簽名筆跡有疑慮，或對方拿不出屋主本人的證件核對，這種情況下自行判斷風險很高，該請律師協助確認代理權限是否有效。
 

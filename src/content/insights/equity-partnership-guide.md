@@ -7,8 +7,8 @@ topic: equity-partnership
 kind: pillar
 keywords: 股東協議書, 合夥拆夥, 技術入股, 乾股, 股權轉讓, 創辦人股權糾紛
 cover: images/covers/equity-partnership-guide.webp
-coverAlt: 新創團隊在辦公室裡圍著桌子腦力激盪討論股權與合夥事宜
-coverCredit: Photo by Yan Krukau on Pexels
+coverAlt: 亞洲團隊在會議室裡討論股權與合夥事宜，主講者站著發言
+coverCredit: Photo by MART PRODUCTION on Pexels
 faq:
   - q: 股東協議書一定要找律師寫嗎？
     a: 法律沒有強制規定，但股東協議書牽涉出資、股權轉讓、退場機制等長期利益分配，條款一旦寫得不夠精確，日後很難補救。建議至少請律師審閱過再簽署，尤其是有技術入股或乾股安排時更需要專業把關。
@@ -26,7 +26,7 @@ faq:
 
 ## 股東合作前必看的 7 個檢查點
 
-![同事們圍坐在辦公室會議桌前討論股東出資與合作條件](/images/inline/equity-partnership-guide-1.webp "Photo by Kampus Production on Pexels")
+![亞洲同事們圍坐在會議室桌前討論股東出資與合作條件](/images/inline/equity-partnership-guide-1.webp "Photo by Felicity Tai on Pexels")
 
 ### 出資方式與比例要寫清楚
 
@@ -58,7 +58,7 @@ faq:
 
 ## 常見迷思破解
 
-![一男一女在辦公室裡握手，達成股東合作共識](/images/inline/equity-partnership-guide-2.webp "Photo by RDNE Stock project on Pexels")
+![一男一女在辦公室裡握手，達成股東合作共識](/images/inline/equity-partnership-guide-2.webp "Photo by Mikhail Nilov on Pexels")
 
 **很多人以為「口頭說好股份多少就算數」，其實日後認定出資與比例，各說各話的風險非常高。** 沒有書面股東協議或章程記載，遇到糾紛時法院只能依雙方能舉證的資料認定，出資時間、金額、比例若沒有留下紀錄，往往各執一詞，難以還原真相。
 

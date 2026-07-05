@@ -85,7 +85,7 @@ coverCredit: Photo by Brett Sayles on Pexels
 
 ## 什麼時候該找律師
 
-![工程師在伺服器機櫃前檢修網路線路](/images/inline/pdpa-compliance-guide-4.webp "Photo by Field Engineer on Pexels")
+![手部特寫在機房內操作鍵盤，背景為伺服器機櫃線路](/images/inline/pdpa-compliance-guide-4.webp "Photo by panumas nikhomkhai on Pexels")
 
 - **準備上線會員制度、大規模蒐集客戶資料做行銷前**：先確認同意書內容、告知事項與行銷退出機制是否合法，避免上線後才發現整批同意書無效。
 - **已發生疑似外洩事件，需要判斷是否構成通報義務**：72 小時的通報時限很短，第一時間就該請律師協助判斷事故等級與應對步驟。

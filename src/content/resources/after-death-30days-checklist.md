@@ -25,7 +25,7 @@ coverCredit: Photo by Lucia Barreiros Silva on Pexels
 
 ## 現在就做的6件事
 
-![墓園燭光與鮮花薄霧夜景](/images/inline/after-death-30days-checklist-1.webp "Photo by KoolShooters on Pexels")
+![白色小蠟燭燭光特寫](/images/inline/after-death-30days-checklist-1.webp "Photo by Jose Raul on Pexels")
 
 ### 1. 30天內辦死亡登記與除戶
 
@@ -65,7 +65,7 @@ coverCredit: Photo by Lucia Barreiros Silva on Pexels
 
 ## 這段時間會遇到的文件，逐條看什麼
 
-![雙手整理財務文件表格特寫](/images/inline/after-death-30days-checklist-2.webp "Photo by Karola G on Pexels")
+![計算機與筆記本文具特寫](/images/inline/after-death-30days-checklist-2.webp "Photo by PNW Production on Pexels")
 
 ### 死亡證明書或相驗屍體證明書
 
@@ -89,7 +89,7 @@ coverCredit: Photo by Lucia Barreiros Silva on Pexels
 
 ## 千萬別做的事
 
-![白色花朵與念珠置於深色布面](/images/inline/after-death-30days-checklist-3.webp "Photo by Ksenia Chernaya on Pexels")
+![黑色背景中一炷線香裊裊升煙](/images/inline/after-death-30days-checklist-3.webp "Photo by Murtaza Saifee on Pexels")
 
 **先動用存款繳喪葬費，沒留下同意與明細**：遺產分割前屬公同共有，單獨提領可能構成侵占，冒名填寫提款單還可能涉及偽造文書，隱匿遺產情節重大更會喪失限定繼承的保障。
 

@@ -1,10 +1,30 @@
 {
-  "slug": "before-signing-lease-checklist",
-  "cover": {"file": "images/covers/before-signing-lease-checklist.webp", "pexels": 8815915, "photographer": "Kampus Production"},
-  "inline": [
-    {"file": "images/inline/before-signing-lease-checklist-1.webp", "pexels": 8293700, "photographer": "RDNE Stock project"},
-    {"file": "images/inline/before-signing-lease-checklist-2.webp", "pexels": 4968561, "photographer": "kaboompics.com"},
-    {"file": "images/inline/before-signing-lease-checklist-3.webp", "pexels": 4246059, "photographer": "Ketut Subiyanto"},
-    {"file": "images/inline/before-signing-lease-checklist-4.webp", "pexels": 4569340, "photographer": "cottonbro studio"}
-  ]
+ "slug": "before-signing-lease-checklist",
+ "cover": {
+  "file": "images/covers/before-signing-lease-checklist.webp",
+  "pexels": 6612493,
+  "photographer": "Mikhail Nilov"
+ },
+ "inline": [
+  {
+   "file": "images/inline/before-signing-lease-checklist-1.webp",
+   "pexels": 16059813,
+   "photographer": "Jimmy Liao"
+  },
+  {
+   "file": "images/inline/before-signing-lease-checklist-2.webp",
+   "pexels": 29327705,
+   "photographer": "Ninh Tien Dat"
+  },
+  {
+   "file": "images/inline/before-signing-lease-checklist-3.webp",
+   "pexels": 4246059,
+   "photographer": "Ketut Subiyanto"
+  },
+  {
+   "file": "images/inline/before-signing-lease-checklist-4.webp",
+   "pexels": 7705371,
+   "photographer": "ShotPot"
+  }
+ ]
 }

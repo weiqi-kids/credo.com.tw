@@ -18,15 +18,15 @@ faq:
   - q: 家中長輩已經被詐騙好幾次，該怎麼預防再發生？
     a: 除了報警求償，更重要的是建立長期防線：申辦銀行大額提領或轉帳提醒機制、與長輩約定「先問家人再匯款」，必要時透過意定監護或財產保護規劃，讓信任的人共同把關重大財務決定，降低長輩單獨被誘導決策的風險。
 cover: images/covers/fraud-response-guide.webp
-coverAlt: 雙手拿著手機的特寫畫面
-coverCredit: Photo by Viralyft on Pexels
+coverAlt: 手機躺在木桌上顯示信用卡遭盜刷詐騙警示簡訊
+coverCredit: Photo by RDNE Stock project on Pexels
 ---
 
 正在發現自己或家中長輩可能被騙走一筆錢，滿腦子問號：現在打電話報案還有用嗎？錢還能拿得回來嗎？對方假裝是檢察官、警察打來的，到底該不該理？這篇整理發現受騙當下到後續求償，每一步該做什麼、找誰、大概要多久。
 
 ## 發現被詐騙後必看的 7 個檢查點
 
-![戴著手套的雙手拿著顯示緊急求救畫面的手機](/images/inline/fraud-response-guide-1.webp "Photo by Tima Miroshnichenko on Pexels")
+![手機畫面顯示電話、訊息、記事等聯絡圖示，象徵立即撥打查證](/images/inline/fraud-response-guide-1.webp "Photo by Pixabay on Pexels")
 
 ### 1. 黃金 30 分鐘：立刻做的 3 件事
 
@@ -72,7 +72,7 @@ coverCredit: Photo by Viralyft on Pexels
 
 ## 常見迷思破解
 
-![手拿著手機的特寫畫面](/images/inline/fraud-response-guide-2.webp "Photo by Towfiqu barbhuiya on Pexels")
+![放大鏡檢視股價走勢圖表，象徵破解投資詐騙迷思](/images/inline/fraud-response-guide-2.webp "Photo by Leeloo The First on Pexels")
 
 **很多人以為「詐欺一定要 6 個月內告，過了就沒救」，其實**詐欺罪目前為非告訴乃論的公訴罪，警方、檢察官可依職權主動偵辦，不受一般告訴乃論罪 6 個月告訴期限制；即使發現受騙已過一段時間，仍可報案或告發，只是越早行動、追回款項與查扣證據的機會越高。
 
@@ -82,7 +82,7 @@ coverCredit: Photo by Viralyft on Pexels
 
 ## 費用與流程行情
 
-![手裡拿著硬幣、口袋翻出，象徵財務損失](/images/inline/fraud-response-guide-3.webp "Photo by Nicola Barts on Pexels")
+![桌上散落的零錢硬幣，象徵財務損失](/images/inline/fraud-response-guide-3.webp "Photo by Negative Space on Pexels")
 
 **報案本身不收費**，165 專線市話免費、行動電話除中華電信外約每分鐘 1 元，到警局製作筆錄也不用付費。
 
@@ -92,7 +92,7 @@ coverCredit: Photo by Viralyft on Pexels
 
 ## 什麼時候該找律師
 
-![在木桌上簽署法律文件的手部特寫](/images/inline/fraud-response-guide-4.webp "Photo by Matheus Lara on Pexels")
+![筆尖在紙上簽下簽名的特寫](/images/inline/fraud-response-guide-4.webp "Photo by Muhammed Shafiqul Islam on Pexels")
 
 發現詐騙金額龐大、涉及投資詐騙且對方提供「投資合約」等文件，需要專業判斷如何主張詐術與求償金額時，建議找律師協助。
 

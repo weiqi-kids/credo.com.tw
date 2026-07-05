@@ -7,8 +7,8 @@ topic: contract-basics
 kind: news
 keywords: 法務訂閱, 中小企業法務, 合約審閱, 勞資糾紛
 cover: images/covers/what-is-legal-subscription.webp
-coverAlt: 兩位專業人士在辦公室裡共同簽署文件的特寫
-coverCredit: Photo by Mizuno K on Pexels
+coverAlt: 三位同事在辦公室裡共同討論文件的特寫
+coverCredit: Photo by Artem Podrez on Pexels
 faq:
   - q: 法務訂閱最低多少錢？
     a: 詠業CREDO 的法務訂閱最低每月 2000 元起，即可取得上市公司等級的線上法務服務。
@@ -26,7 +26,7 @@ faq:
 
 ## 法務訂閱通常包含哪些服務？
 
-![手部特寫在卡片上蓋章確認](/images/inline/what-is-legal-subscription-2.webp "Photo by RDNE Stock project on Pexels")
+![金色花朵蠟封印章特寫，象徵文件正式確認](/images/inline/what-is-legal-subscription-2.webp "Photo by Dagmara Dombrovska on Pexels")
 
 - **合約審閱**：簽約前由律師與法務把關條款風險。
 - **勞資管理諮詢**：勞動契約、工作規則、資遣與加班費等常見地雷。

@@ -24,7 +24,7 @@ faq:
 
 ## 買賣簽約前必看的7個檢查點
 
-![驗屋人員手持檢查清單核對房屋狀況](/images/inline/home-purchase-dispute-guide-1.webp "Photo by RDNE Stock project on Pexels")
+![台灣建案工地現場，象徵簽約前應落實的施工品質把關](/images/inline/home-purchase-dispute-guide-1.webp "Photo by MELVIN 小確幸 on Pexels")
 
 ### 1. 先問清楚履約保證用哪一種
 
@@ -56,7 +56,7 @@ faq:
 
 ## 常見迷思破解
 
-![工人在屋頂上進行修繕作業](/images/inline/home-purchase-dispute-guide-2.webp "Photo by Hanna Payasnikava on Pexels")
+![台北101旁大樓興建工地，鋼構作業人員高空作業](/images/inline/home-purchase-dispute-guide-2.webp "Photo by Jimmy Liao on Pexels")
 
 **很多人以為付了斡旋金就等於成交，其實不然。** 斡旋金只是買方表達購買意願、委託仲介協調的款項，正式契約成立前仍有變數，賣方接受斡旋不代表法律上已經成交，實際權利義務仍以雙方正式簽署的買賣契約為準。
 
@@ -66,13 +66,13 @@ faq:
 
 ## 費用與流程行情
 
-![房仲將鑰匙交給買方，象徵交屋完成](/images/inline/home-purchase-dispute-guide-3.webp "Photo by Thirdman on Pexels")
+![鑰匙插在住宅大門門鎖上的特寫，象徵交屋](/images/inline/home-purchase-dispute-guide-3.webp "Photo by PhotoMIX Company on Pexels")
 
 房屋買賣的付款節奏，市場上常見的行情是：斡旋金／訂金約總價的 1% 至 2%，簽約時再補足到約 10%，接著依用印、完稅、交屋等階段分期給付，交屋前最後一筆款項比例通常最高。實際比例、期數與付款時點，都以雙方簽署的買賣契約與付款明細表為準，仲介服務費、代書規費等費用也應在委託前逐項問清楚，避免行情之外還有隱藏費用。
 
 ## 什麼時候該找律師
 
-![手部特寫填寫法律文件表格](/images/inline/home-purchase-dispute-guide-4.webp "Photo by RDNE Stock project on Pexels")
+![手部特寫填寫法律文件表格](/images/inline/home-purchase-dispute-guide-4.webp "Photo by Kampus Production on Pexels")
 
 - **建商遲遲不交屋、或交屋日期一延再延**：想確認自己是否可以主張違約責任、解約或求償，需要對照契約條款判斷。
 - **收到建商存證信函，要求限期用印、完稅或交屋**：不確定期限是否合理、不配合會有什麼後果時，建議先諮詢再回應，避免權益受損或誤觸違約。

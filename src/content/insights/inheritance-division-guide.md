@@ -58,7 +58,7 @@ faq:
 
 ## 常見迷思破解
 
-![手部特寫在卡片上蓋章，象徵文件用印確認](/images/inline/inheritance-division-guide-2.webp "Photo by RDNE Stock project on Pexels")
+![蠟封印章特寫，象徵文件正式生效](/images/inline/inheritance-division-guide-2.webp "Photo by Anna Tarazevich on Pexels")
 
 **迷思一：很多人以為「拋棄繼承」跟「拋棄特留分」是同一件事**——其實拋棄繼承是完全退出繼承關係，連遺產帶債務都不要，必須在 3 個月內以書面向法院聲請；拋棄特留分則是繼承人在繼承開始後，向侵害特留分的人表示不主張扣減，兩者的時點、方式與法律效果完全不同，混為一談容易做錯決定。
 
@@ -77,7 +77,7 @@ faq:
 
 ## 什麼時候該找律師
 
-![現代化法院建築外觀](/images/inline/inheritance-division-guide-4.webp "Photo by Ayşegül Aytören on Pexels")
+![正義女神雕像與法典特寫，象徵司法專業](/images/inline/inheritance-division-guide-4.webp "Photo by Vural Yavas on Pexels")
 
 - **繼承人對分割方案喬不攏、僵持不下**：尤其牽涉不動產或家族事業，協議卡關時，律師能協助盤點各方應繼分與可行的分割方案。
 - **懷疑自己的特留分被遺囑或生前贈與侵害**：特留分扣減權有時效限制，越早釐清自己的比例與主張方式越有利。

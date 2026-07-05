@@ -18,15 +18,15 @@ faq:
   - q: 發現家人趁長輩失智把房子過戶走了，該怎麼辦？
     a: 可以從有無監護宣告、行為時的意思能力切入，主張過戶行為無效；如果牽涉偽造簽名、印章，還可能涉及刑法偽造文書等刑責。建議先保全病歷、就診紀錄等證據，再儘速諮詢律師評估救濟途徑。
 cover: images/covers/dementia-asset-protection-guide.webp
-coverAlt: 一對長者夫婦在櫻花盛開的公園散步的背影
-coverCredit: Photo by Nikita Pishchugin on Pexels
+coverAlt: 一對長者夫婦推著助行器在林蔭步道散步的背影
+coverCredit: Photo by 대정 김 on Pexels
 ---
 
 爸媽開始忘東忘西、講話重複，甚至被醫生懷疑失智——這時候你最想知道的往往是**財產怎麼保**——病怎麼治有醫生把關，財產卻沒有。子女想幫忙管錢，卻怕背上「搶財產」的嫌疑；也怕手腳慢一點，財產就被其他家人動走。這篇文章用檢查清單方式，把財產保護的關鍵防線一次講清楚。
 
 ## 財產保護前必看的 8 個檢查點
 
-![長者的雙手靠在木製拐杖上的黑白特寫](/images/inline/dementia-asset-protection-guide-1.webp "Photo by - landsmann - on Pexels")
+![長者雙手練習傳統書法的特寫](/images/inline/dementia-asset-protection-guide-1.webp "Photo by Nimit N on Pexels")
 
 ### 1. 監護人不是想動用財產就能動用
 
@@ -72,7 +72,7 @@ coverCredit: Photo by Nikita Pishchugin on Pexels
 
 ## 費用與流程行情
 
-![雙手在桌上清點鈔票的特寫](/images/inline/dementia-asset-protection-guide-3.webp "Photo by Tima Miroshnichenko on Pexels")
+![雙手在桌上用計算機核對文件的特寫](/images/inline/dementia-asset-protection-guide-3.webp "Photo by Mikhail Nilov on Pexels")
 
 聲請監護宣告的法院裁判費用行情約 1,500 元；法院會另外囑託精神科醫師鑑定，鑑定費用需由聲請人先預納，行情依到院或到宅鑑定而不同，到院鑑定通常較低、到宅鑑定因需醫師出診費用較高，實務上大致落在數千元到 2 萬元上下，實際金額以受理鑑定的醫院公告為準。
 

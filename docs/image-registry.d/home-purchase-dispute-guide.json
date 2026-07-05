@@ -1,10 +1,30 @@
 {
-  "slug": "home-purchase-dispute-guide",
-  "cover": {"file": "images/covers/home-purchase-dispute-guide.webp", "pexels": 33051304, "photographer": "Sunny Li"},
-  "inline": [
-    {"file": "images/inline/home-purchase-dispute-guide-1.webp", "pexels": 8293680, "photographer": "RDNE Stock project"},
-    {"file": "images/inline/home-purchase-dispute-guide-2.webp", "pexels": 7788264, "photographer": "Hanna Payasnikava"},
-    {"file": "images/inline/home-purchase-dispute-guide-3.webp", "pexels": 8482868, "photographer": "Thirdman"},
-    {"file": "images/inline/home-purchase-dispute-guide-4.webp", "pexels": 7821682, "photographer": "RDNE Stock project"}
-  ]
+ "slug": "home-purchase-dispute-guide",
+ "cover": {
+  "file": "images/covers/home-purchase-dispute-guide.webp",
+  "pexels": 33051304,
+  "photographer": "Sunny Li"
+ },
+ "inline": [
+  {
+   "file": "images/inline/home-purchase-dispute-guide-1.webp",
+   "pexels": 31605303,
+   "photographer": "MELVIN 小確幸"
+  },
+  {
+   "file": "images/inline/home-purchase-dispute-guide-2.webp",
+   "pexels": 10837295,
+   "photographer": "Jimmy Liao"
+  },
+  {
+   "file": "images/inline/home-purchase-dispute-guide-3.webp",
+   "pexels": 101808,
+   "photographer": "PhotoMIX Company"
+  },
+  {
+   "file": "images/inline/home-purchase-dispute-guide-4.webp",
+   "pexels": 8815843,
+   "photographer": "Kampus Production"
+  }
+ ]
 }

@@ -7,8 +7,8 @@ topic: debt-collection
 kind: pillar
 keywords: 貨款催收, 存證信函範本, 本票裁定, 支付命令, 債權時效, 假扣押
 cover: images/covers/debt-collection-guide.webp
-coverAlt: 俯拍計算機疊放在一疊美元紙鈔上，象徵貨款催收與金額試算
-coverCredit: Photo by Karola G on Pexels
+coverAlt: 法槌置於木底座上的特寫，象徵貨款催收的法院救濟程序
+coverCredit: Photo by Katrin Bolovtsova on Pexels
 faq:
   - q: 存證信函發了對方不理會怎麼辦？
     a: 存證信函本身沒有強制力，只是保留「已催告」的證據與中斷時效的效果。對方不理會時，下一步依有無本票、金額大小，考慮聲請支付命令、本票裁定或直接提告，並視情況先聲請假扣押防止對方脫產。
@@ -26,7 +26,7 @@ faq:
 
 ## 貨款催收前必看的 7 個檢查點
 
-![雙手翻閱文件盒中的資料，象徵整理債權憑證](/images/inline/debt-collection-guide-1.webp "Photo by cottonbro studio on Pexels")
+![雙手在桌上核對單據與文件，一旁放著眼鏡與筆，象徵整理債權憑證](/images/inline/debt-collection-guide-1.webp "Photo by Leeloo The First on Pexels")
 
 ### 1. 先確認債權憑證是否完整
 
@@ -68,7 +68,7 @@ faq:
 
 ## 費用與流程行情
 
-![女性坐在辦公桌前檢視帳單與收據，準備計算費用](/images/inline/debt-collection-guide-3.webp "Photo by Karola G on Pexels")
+![粉色文件夾與計算機並排放在桌上，象徵費用試算與流程準備](/images/inline/debt-collection-guide-3.webp "Photo by Tara Winstead on Pexels")
 
 - **存證信函**：郵局存證信函費用，首頁行情約 50 元、續頁或附件每張約 30 元，另加掛號郵資與回執費，一般 3～4 頁的存證信函總費用行情約在 200～300 元之間，實際金額以中華郵政公告為準。
 - **支付命令**：依民事訴訟法第 77 條之 19，聲請費一律為新臺幣 500 元，無論請求金額大小都是定額收費，是所有救濟途徑中門檻最低的一種。
@@ -78,7 +78,7 @@ faq:
 
 ## 什麼時候該找律師
 
-![團隊成員圍著筆電討論催收進度，氣氛積極](/images/inline/debt-collection-guide-4.webp "Photo by Mikhail Nilov on Pexels")
+![雙手在文件上簽署，西裝袖口與腕錶特寫，不露臉部](/images/inline/debt-collection-guide-4.webp "Photo by Mikhail Nilov on Pexels")
 
 - **金額較大或對方態度強硬**：涉及金額不小、對方明顯打算拖延或有脫產跡象時，及早諮詢能幫你選對程序、爭取時間。
 - **對方對支付命令提出異議**：一旦進入訴訟軌道，攻防策略、證據整理與程序期限都更複雜，建議由律師接手。

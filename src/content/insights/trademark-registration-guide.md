@@ -17,14 +17,14 @@ faq:
     a: 可以先蒐證，例如截圖、時間戳、原始檔案，再視情節發存證信函或提告；著作權侵權除刑事責任外，民事上若不易證明實際損害，法院可依情節酌定法定賠償額，但金額多寡個案差異很大，不宜自行預設數字。
 cover: images/covers/trademark-registration-guide.webp
 coverAlt: 設計師專注於電腦前進行品牌視覺設計
-coverCredit: Photo by Jonathan Borba on Pexels
+coverCredit: Photo by Mikhail Nilov on Pexels
 ---
 
 正在幫新品牌申請商標、產品準備量產前想搶先卡位專利，或是發現自己的設計、文案、商標被別人搶先一步用走——這幾種處境的共通點，是「早一步保護」永遠比「事後救濟」便宜也有效。這篇整理商標、專利、著作權三種智慧財產在申請與維權上最容易踩雷的地方，看完你會知道該先做什麼檢查、行情大概多少錢，以及什麼時候該找律師出手。
 
 ## 智慧財產保護前必看的 7 個檢查點
 
-![手繪筆記本上勾勒品牌策略草圖](/images/inline/trademark-registration-guide-1.webp "Photo by Mikael Blomkvist on Pexels")
+![會議桌前專注於筆記本上書寫品牌策略](/images/inline/trademark-registration-guide-1.webp "Photo by Mikhail Nilov on Pexels")
 
 ### 1. 商標註冊前，先做「商標檢索」
 

@@ -7,8 +7,8 @@ topic: contract-basics
 kind: pillar
 keywords: 合約範本, 報價單效力, 定型化契約, 簽約注意事項, 電子簽章, 違約金
 cover: images/covers/contract-signing-checklist.webp
-coverAlt: 一男一女在辦公室裡握手，象徵簽約合作達成共識
-coverCredit: Photo by Sora Shimazaki on Pexels
+coverAlt: 東亞面孔同事在辦公室走道握手，象徵簽約合作達成共識
+coverCredit: Photo by Felicity Tai on Pexels
 faq:
   - q: 報價單有法律效力嗎？對方回傳報價單我就要出貨嗎？
     a: 要看報價單怎麼來的。單純寄送的價目表通常只是「要約引誘」，沒有拘束力；但如果是針對客戶詢價需求specifically 提出的報價，可能已構成「要約」，對方一旦表示接受就成立契約，要出貨或付款都可能被要求履行，收到報價前最好先確認雙方的真意與後續流程。
@@ -78,7 +78,7 @@ faq:
 
 ## 什麼時候該找律師
 
-![團隊成員在辦公室會議中討論合約細節](/images/inline/contract-signing-checklist-4.webp "Photo by RDNE Stock project on Pexels")
+![同事在辦公室裡討論平板上的文件內容](/images/inline/contract-signing-checklist-4.webp "Photo by Mikhail Nilov on Pexels")
 
 **合約金額龐大或屬長期合作關係時**，例如經銷代理、加盟授權、技術授權等，條款設計會直接影響未來數年的權利義務，值得在簽約前先請律師把關。
 

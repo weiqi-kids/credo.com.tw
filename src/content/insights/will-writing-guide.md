@@ -18,8 +18,8 @@ faq:
   - q: 自書遺囑一定要拿去公證才有效嗎？
     a: 不用。自書遺囑只要符合法定要件即具法律效力，公證並非生效要件；它的作用是多一層由公證人確認程序、降低事後被質疑真偽或見證人資格爭議的風險，是否辦理公證屬於個人選擇。
 cover: images/covers/will-writing-guide.webp
-coverAlt: 手持鋼筆書寫的特寫畫面
-coverCredit: Photo by cottonbro studio on Pexels
+coverAlt: 手寫中文筆記本特寫，桌邊放著茶杯
+coverCredit: Photo by Nguyễn Tiến Thành on Pexels
 ---
 
 正打算立遺囑、或想幫長輩安排身後財產分配的你，可能已經在網路上找了不少「自書遺囑範例」，卻拿不準照抄一份到底有沒有效、代筆和公證又差在哪裡。這篇文章把三種常見遺囑方式的法定要件、常見敗訴原因、費用行情整理清楚，看完就能判斷自己適合哪一種、下一步該找誰辦。
@@ -64,7 +64,7 @@ coverCredit: Photo by cottonbro studio on Pexels
 
 ## 費用與流程行情
 
-![用鋼筆在信封上書寫花體字的特寫](/images/inline/will-writing-guide-3.webp "Photo by cottonbro studio on Pexels")
+![手寫信件旁放著一杯茶與手機的特寫](/images/inline/will-writing-guide-3.webp "Photo by Kampus on Pexels")
 
 自書遺囑本人書寫不需支付費用，但若想額外辦理「認證」以降低真偽爭議，認證費用行情約落在公證書費用的一半左右，通常從新台幣千元以下起跳，實際金額依所涉財產標的金額級距而定。
 

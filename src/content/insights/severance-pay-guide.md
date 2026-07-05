@@ -78,7 +78,7 @@ faq:
 
 ## 什麼時候該找律師
 
-![雙手在筆電上打字的特寫，桌上放著一杯咖啡，不露臉部](/images/inline/severance-pay-guide-4.webp "Photo by William Fortunato on Pexels")
+![雙手在筆電鍵盤上打字的特寫，簡約明亮的辦公空間，不露臉部](/images/inline/severance-pay-guide-4.webp "Photo by Letícia Alvares on Pexels")
 
 - **員工主張非法解僱、要求恢復僱傭關係**：一旦員工提起確認僱傭關係存在之訴，牽涉的不只是資遣費，還有訴訟期間工資的追溯計算，風險金額會持續累積。
 - **多名員工一起提出加班費或工資爭議**：同一套薪資制度如果被認定違法，往往不是單一員工的問題，需要先盤點制度性風險再回應。

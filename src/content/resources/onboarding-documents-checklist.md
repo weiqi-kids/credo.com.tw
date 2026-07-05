@@ -17,15 +17,15 @@ faq:
   - q: 上班時間寫的程式碼或設計稿，著作權歸誰？
     a: 依著作權法第11條，員工職務上完成的著作，原則上員工本人是著作人，但著作財產權歸雇主享有，契約另有約定從其約定。簽署前要確認條款只涵蓋職務範圍內完成的著作與發明，不含到職前已完成、或利用私人時間與自有設備完成且與職務無關的作品。
 cover: images/covers/onboarding-documents-checklist.webp
-coverAlt: 兩位員工配戴識別證搭乘電扶梯
-coverCredit: Photo by Liliana Drew on Pexels
+coverAlt: 辦公室隔間內四位同事交談
+coverCredit: Photo by RDNE Stock project on Pexels
 ---
 
 到職當天人資會請你簽一疊文件，簽下去前先看懂六種常見條款在保護誰，再決定要不要簽、要不要要求修改。
 
 ## 現在就做的7件事
 
-![兩位員工配戴識別證搭乘電扶梯](/images/inline/onboarding-documents-checklist-1.webp "Photo by Alena Darmel on Pexels")
+![男子在辦公桌前簽署文件](/images/inline/onboarding-documents-checklist-1.webp "Photo by MART PRODUCTION on Pexels")
 
 ### 1. 拿到文件先全部拍照，再簽名
 
@@ -57,7 +57,7 @@ coverCredit: Photo by Liliana Drew on Pexels
 
 ## 文件逐條解說
 
-![身著西裝人士在辦公桌簽署文件](/images/inline/onboarding-documents-checklist-2.webp "Photo by cottonbro studio on Pexels")
+![身著西裝男子在辦公桌前書寫文件](/images/inline/onboarding-documents-checklist-2.webp "Photo by Tran Nhu Tuan on Pexels")
 
 **勞動契約**：工資、工時、休假、契約終止方式有沒有具體寫出來，只寫「依公司規定辦理」的，要求附上規定文件。
 
@@ -73,7 +73,7 @@ coverCredit: Photo by Liliana Drew on Pexels
 
 ## 千萬別做的事
 
-![無臉商務人士在辦公桌簽約](/images/inline/onboarding-documents-checklist-3.webp "Photo by Andrea Piacquadio on Pexels")
+![桌面上攤開的文件與畫記重點用的筆](/images/inline/onboarding-documents-checklist-3.webp "Photo by RDNE Stock project on Pexels")
 
 **別為了趕快到職，簽還沒寫完或有空白處的條款。** 空白處事後被填入不利內容，簽名的人很難主張不知情。
 
@@ -94,7 +94,7 @@ coverCredit: Photo by Liliana Drew on Pexels
 
 ## 什麼情況這份清單不夠用
 
-![商務夥伴會議討論合約文件](/images/inline/onboarding-documents-checklist-4.webp "Photo by Sora Shimazaki on Pexels")
+![兩位同事一起翻閱文件夾討論合約內容](/images/inline/onboarding-documents-checklist-4.webp "Photo by Mikhail Nilov on Pexels")
 
 **競業禁止條款涉及境外派駐或技術輸出中國大陸、香港、澳門。** 這類約定牽涉營業秘密法加重刑責的適用範圍，補償與限制條件的談判複雜度遠高於一般國內職缺。
 

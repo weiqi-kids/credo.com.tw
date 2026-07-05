@@ -7,8 +7,8 @@ topic: title-registration
 kind: pillar
 keywords: 繼承登記, 共有土地分割, 借名登記, 繼承過戶流程, 未辦繼承登記, 遺產分割協議
 cover: images/covers/inheritance-registration-guide.webp
-coverAlt: 手指向地圖上的地籍位置
-coverCredit: Photo by Ivan S on Pexels
+coverAlt: 木製房屋模型與鑰匙放在文件上，象徵不動產繼承登記
+coverCredit: Photo by Atlantic Ambience on Pexels
 faq:
   - q: 繼承登記一定要在多久內辦完？
     a: 依土地法規定，繼承人應自被繼承人死亡之日起 6 個月內申請繼承登記，逾期每逾 1 個月會被加收登記費 1 倍的罰鍰，最高以 20 倍為限；若拖到繼承開始滿 1 年仍未辦，地政機關會公告並列冊管理，列管 15 年後可能被標售，實務上務必儘早處理。
@@ -26,7 +26,7 @@ faq:
 
 ## 繼承過戶前必看的 7 個檢查點
 
-![多雙手一同指向地圖，討論土地範圍](/images/inline/inheritance-registration-guide-1.webp "Photo by Wendy Wei on Pexels")
+![多個房屋模型與文件資料夾放在桌上，象徵繼承房產的分割](/images/inline/inheritance-registration-guide-1.webp "Photo by Jakub Zerdzicki on Pexels")
 
 ### 1. 先確認繼承順位與應繼分
 
@@ -74,7 +74,7 @@ faq:
 
 ## 費用與流程行情
 
-![手部特寫填寫稅務申報文件](/images/inline/inheritance-registration-guide-3.webp "Photo by Nataliya Vaitkevich on Pexels")
+![計算機與稅務文件夾放在桌上，象徵遺產稅試算](/images/inline/inheritance-registration-guide-3.webp "Photo by Tara Winstead on Pexels")
 
 **遺產稅申報**：死亡日起 6 個月內向國稅局申報，逾期可能有滯報金與利息，實際稅額與免稅額度以財政部公告為準。
 
@@ -88,7 +88,7 @@ faq:
 
 ## 什麼時候該找律師
 
-![手拿筆核對文件與圖表資料](/images/inline/inheritance-registration-guide-4.webp "Photo by Lukas Blazek on Pexels")
+![手拿筆核對文件與圖表資料](/images/inline/inheritance-registration-guide-4.webp "Photo by Kindel Media on Pexels")
 
 - **繼承人對遺產分割協議喬不攏**：有人堅持不簽字、對分配比例有異議，協議陷入僵局時，需要專業協助評估談判或訴訟途徑。
 - **懷疑名下財產是借名登記，出名人翻臉或擅自處分**：一旦出名人已將財產移轉給第三人或拒絕返還，牽涉舉證借名關係存在與求償策略，屬於專業訴訟領域。

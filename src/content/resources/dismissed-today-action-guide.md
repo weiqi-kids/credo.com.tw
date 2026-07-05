@@ -17,15 +17,15 @@ faq:
   - q: 失業給付最多能領多少、領多久？
     a: 按退保前6個月平均月投保薪資60%按月發給，最長6個月；年滿45歲或領有身心障礙證明者最長9個月。有無工作的配偶、未成年子女等眷屬，每人再加給10%，最多加計20%。
 cover: images/covers/dismissed-today-action-guide.webp
-coverAlt: 雙手捧著開口紙箱特寫
-coverCredit: Photo by Yan Krukau on Pexels
+coverAlt: 打開的紙箱放在木桌上，旁邊有膠帶與剪刀
+coverCredit: Photo by Karola G on Pexels
 ---
 
 被通知資遣的當下，先把情緒放一邊，接下來幾小時要拿的文件、要核對的數字、不能簽的字，一件都不能漏。
 
 ## 現在就做的 7 件事
 
-![雙手捧著貼標籤紙箱包裹](/images/inline/dismissed-today-action-guide-1.webp "Photo by Polina Tankilevitch on Pexels")
+![木桌上堆疊的紙箱與書本](/images/inline/dismissed-today-action-guide-1.webp "Photo by Karola G on Pexels")
 
 ### 1. 當場要求資遣證明文件
 
@@ -71,7 +71,7 @@ coverCredit: Photo by Yan Krukau on Pexels
 
 ## 資遣文件逐條解說
 
-![雙手整理綁繩文件放入紙箱](/images/inline/dismissed-today-action-guide-2.webp "Photo by cottonbro studio on Pexels")
+![堆疊在桌上的文件資料夾特寫](/images/inline/dismissed-today-action-guide-2.webp "Photo by Pixabay on Pexels")
 
 **非自願離職證明書、離職證明書**：看離職原因欄位是不是寫「非自願離職」或「資遣」，日期與雇主用印是否齊全。如果上面寫的是「勞工自請離職」或「兩造合意離職」，先別收下，當場要求更正。這一欄寫錯，會直接讓你失去失業給付的請領資格。
 
@@ -81,7 +81,7 @@ coverCredit: Photo by Yan Krukau on Pexels
 
 ## 千萬別做的事
 
-![現代共享辦公室空桌無人](/images/inline/dismissed-today-action-guide-3.webp "Photo by Mike van Schoonderwalt on Pexels")
+![現代辦公室空桌無人](/images/inline/dismissed-today-action-guide-3.webp "Photo by cottonbro studio on Pexels")
 
 ### 別當場簽「自願離職」或「合意終止」的文件
 

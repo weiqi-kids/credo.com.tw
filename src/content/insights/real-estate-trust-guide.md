@@ -26,7 +26,7 @@ faq:
 
 ## 設立不動產信託前必看的 7 個檢查點
 
-![一對夫妻雙手捧著新家鑰匙](/images/inline/real-estate-trust-guide-1.webp "Photo by Pavel Danilyuk on Pexels")
+![一對東亞面孔夫妻牽手，象徵共同規劃不動產信託](/images/inline/real-estate-trust-guide-1.webp "Photo by RDNE Stock project on Pexels")
 
 ### 1. 先想清楚信託目的
 

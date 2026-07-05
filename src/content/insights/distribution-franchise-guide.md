@@ -58,7 +58,7 @@ coverCredit: Photo by Mak_jp on Pexels
 
 ## 常見迷思破解
 
-![倉庫員工搬運紙箱，代表經銷商進出貨作業](/images/inline/distribution-franchise-guide-2.webp "Photo by Tiger Lily on Pexels")
+![戴口罩的倉庫員工手持紙箱，代表經銷商進出貨作業](/images/inline/distribution-franchise-guide-2.webp "Photo by Greece-China News on Pexels")
 
 **很多人以為「違約金寫得越高越有嚇阻力」，其實法院可以直接酌減。** 依民法第 252 條，違約金過高時法院得依職權減至相當金額，實務上也有判決指出即使債務人沒有主動主張，法院仍可能依職權審酌，訂過高的違約金不一定真的能全額拿到。
 
@@ -68,7 +68,7 @@ coverCredit: Photo by Mak_jp on Pexels
 
 ## 費用與流程行情
 
-![外送員將包裹交給客戶，代表通路配送流程](/images/inline/distribution-franchise-guide-3.webp "Photo by Mizuno K on Pexels")
+![外送員在公寓門口按對講機交付包裹，代表通路配送流程](/images/inline/distribution-franchise-guide-3.webp "Photo by Mike Jones on Pexels")
 
 經銷或加盟合約的律師審閱費用，行情約落在合約複雜度與頁數區間內計費，單純制式合約審閱通常較快，若牽涉跨區域授權、多方權利金拆分，審閱與修改往返時間會拉長，實際報價以個案評估為準。
 

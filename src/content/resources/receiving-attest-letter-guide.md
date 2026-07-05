@@ -17,8 +17,8 @@ faq:
   - q: 收到後完全不理會，最壞會怎樣？
     a: 存證信函本身不會自動變成法院文件，但長期不理會可能讓對方接下來聲請支付命令、聲請本票裁定或直接起訴，屆時程序期限更緊迫、迴旋空間更小。及早釐清立場比拖到收到法院文件才處理更划算。
 cover: images/covers/receiving-attest-letter-guide.webp
-coverAlt: 復古明信片與信封用麻繩束綁陳列
-coverCredit: Photo by Ylanite Koppens on Pexels
+coverAlt: 多個白色開窗信封扇形排列平拍
+coverCredit: Photo by Pixabay on Pexels
 ---
 
 存證信函躺在信箱裡，先別急著回信也別急著撕掉，今天只做一件事：把信封和信函本身完整保留下來，看懂對方到底在主張什麼，再決定下一步。
@@ -71,7 +71,7 @@ coverCredit: Photo by Ylanite Koppens on Pexels
 
 ## 千萬別做的事
 
-![手持文件紙張特寫辦公桌](/images/inline/receiving-attest-letter-guide-3.webp "Photo by Katrin Bolovtsova on Pexels")
+![手拿筆在案件文件上書寫特寫](/images/inline/receiving-attest-letter-guide-3.webp "Photo by cottonbro studio on Pexels")
 
 ### 別放著不理，當作沒收到
 

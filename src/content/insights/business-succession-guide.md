@@ -7,8 +7,8 @@ topic: governance-succession
 kind: pillar
 keywords: 家族企業接班, 董事責任, 股權傳承, 公司治理, 特留分, 遺產稅規劃
 cover: images/covers/business-succession-guide.webp
-coverAlt: 兩位商務人士近距離握手，象徵家族企業經營權交接
-coverCredit: Photo by Kampus Production on Pexels
+coverAlt: 兩位東亞面孔商務人士在辦公室握手，象徵家族企業經營權交接
+coverCredit: Photo by ThirdMan on Pexels
 faq:
   - q: 公司股份要分給小孩，現在贈與比較好，還是等繼承？
     a: 兩者各有稅負與時程考量，贈與稅每年有 244 萬免稅額可逐年運用，遺產稅則有較高的免稅額與級距，實務上常見「及早、分年贈與、搭配信託」的組合策略，但適合方式要視整體資產規模與公司股權結構試算，建議找律師與會計師一起規劃。
@@ -26,7 +26,7 @@ faq:
 
 ## 家族企業接班前必看的 6 個檢查點
 
-![多位商務人士圍坐會議桌討論公司治理](/images/inline/business-succession-guide-1.webp "Photo by Diva Plavalaguna on Pexels")
+![多位東亞面孔商務人士圍坐會議桌討論公司治理](/images/inline/business-succession-guide-1.webp "Photo by Mikhail Nilov on Pexels")
 
 ### 1. 董事忠實義務與注意義務，交棒後責任算誰的？
 
@@ -66,7 +66,7 @@ faq:
 
 ## 常見迷思破解
 
-![手持合約文件並以筆指出條款內容](/images/inline/business-succession-guide-2.webp "Photo by RDNE Stock project on Pexels")
+![東亞面孔商務人士在辦公室手持合約文件](/images/inline/business-succession-guide-2.webp "Photo by Mart Production on Pexels")
 
 **很多人以為「把公司留給長子，其他孩子用現金補就好」，其實**現金補償金額若沒有先扣掉特留分試算，仍可能被認定侵害其他繼承人權益；加上未上市公司股權估價方式常有爭議，補償是否「足額」本身就是常見的訴訟導火線。
 
@@ -84,7 +84,7 @@ faq:
 
 ## 什麼時候該找律師
 
-![年長客戶與家人一同簽署文件，諮詢傳承規劃](/images/inline/business-succession-guide-4.webp "Photo by Kampus Production on Pexels")
+![東亞面孔夫妻一同檢視文件，討論家族傳承規劃](/images/inline/business-succession-guide-4.webp "Photo by Annushka Ahuja on Pexels")
 
 - **準備啟動接班規劃、要修改章程或發行特別股時**：股權結構設計牽涉公司法與稅法交叉適用，及早由律師與會計師共同把關，比事後補救成本低很多。
 - **家族股東對經營權已出現分歧跡象時**：董事會席次爭議、股權移轉條件談不攏,及早介入調解，比等到訴訟才處理更有轉圜空間。

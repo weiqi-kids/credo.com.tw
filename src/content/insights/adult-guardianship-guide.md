@@ -18,15 +18,15 @@ faq:
   - q: 意定監護契約簽了還可以反悔嗎？
     a: 可以。在法院為監護宣告前，本人或受任人都能以書面經公證撤回契約，撤回一部視為全部撤回；宣告生效後，若有正當理由，本人可聲請法院許可終止契約，受任人也可聲請法院許可辭任監護人職務，兩套程序不一樣。
 cover: images/covers/adult-guardianship-guide.webp
-coverAlt: 一對長者夫婦牽著手從背後散步的畫面
-coverCredit: Photo by Gülşah Ergişi on Pexels
+coverAlt: 一對長者夫婦在日式巷弄街道上駐足交談的背影
+coverCredit: Photo by Slava v on Pexels
 ---
 
 爸媽開始忘東忘西、常常重複問同一件事，你開始擔心：萬一有一天他們判斷力真的不行了，銀行帳戶、房子、保單誰來管？家裡好幾個兄弟姊妹，會不會為了「誰來當監護人」吵起來？這篇文章用白話把意定監護契約、監護宣告與輔助宣告的差別、費用與流程行情講清楚，看完你會知道現在該做什麼、什麼時候該找律師。
 
 ## 意定監護契約簽約前必看的 6 個檢查點
 
-![一人遞筆給另一人簽署文件的手部特寫](/images/inline/adult-guardianship-guide-1.webp "Photo by RDNE Stock project on Pexels")
+![手持筆在文件上簽名的特寫](/images/inline/adult-guardianship-guide-1.webp "Photo by Kampus Production on Pexels")
 
 ### 1. 意思能力健全時才能簽約，等失智惡化就來不及
 
@@ -54,7 +54,7 @@ coverCredit: Photo by Gülşah Ergişi on Pexels
 
 ## 常見迷思破解
 
-![年輕人的手輕輕握著長者的手](/images/inline/adult-guardianship-guide-2.webp "Photo by Kampus Production on Pexels")
+![年輕人的手輕輕握著長者的手](/images/inline/adult-guardianship-guide-2.webp "Photo by VIVO Ken on Pexels")
 
 **很多人以為監護宣告跟輔助宣告是同一件事，其實適用對象與法律效果差很多。** 監護宣告針對完全無法為意思表示的人，宣告後本人成為無行為能力人，所有法律行為都由監護人代理；輔助宣告則是判斷能力顯著降低、但還沒完全喪失的人，本人仍可自己生活起居，只有做特定重要行為時才需要輔助人同意。
 

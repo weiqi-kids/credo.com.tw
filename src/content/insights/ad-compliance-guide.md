@@ -74,7 +74,7 @@ coverCredit: Photo by Ivan S on Pexels
 
 ## 什麼時候該找律師
 
-![貨運人員在城市街道將包裹裝上運送車](/images/inline/ad-compliance-guide-4.webp "Photo by Thom Gonzalez on Pexels")
+![台灣街道上的貨運車與機車停放，代表城市配送場景](/images/inline/ad-compliance-guide-4.webp "Photo by Jimmy Liao on Pexels")
 
 - **收到公平會函詢或開始調查通知**：回覆內容涉及是否構成不實廣告的法律判斷，貿然回覆反而可能坐實違法事實。
 - **同業檢舉或消基會、消保官介入的消費糾紛**：需要同時因應民事求償與行政裁罰兩條線，處理策略不同。

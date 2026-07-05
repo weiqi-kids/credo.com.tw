@@ -62,7 +62,7 @@ faq:
 
 ## 常見迷思破解
 
-![手拿筆在文件上簽名，特寫鏡頭](/images/inline/company-formation-guide-2.webp "Photo by Pavel Danilyuk on Pexels")
+![亞洲商務男士坐在辦公桌前簽署文件](/images/inline/company-formation-guide-2.webp "Photo by MART PRODUCTION on Pexels")
 
 **很多人以為「開公司資本額一定要 50 萬或 25 萬起跳」**，其實這是舊制的印象。現行公司法已廢止法定最低資本額，資本額多少由股東自行決定，只要經會計師查核簽證認定足敷開辦成本即可，不再有統一的門檻金額。
 
@@ -72,7 +72,7 @@ faq:
 
 ## 費用與流程行情
 
-![計算機與筆記本放在一疊紙鈔上，象徵費用試算](/images/inline/company-formation-guide-3.webp "Photo by Karola G on Pexels")
+![亞洲女性使用計算機核算費用，桌上放著圖紙，象徵費用試算](/images/inline/company-formation-guide-3.webp "Photo by RDNE Stock project on Pexels")
 
 公司設立登記規費，行情上是按實收資本額每 4,000 元收 1 元計算，未達 1,000 元則以 1,000 元計算，線上申辦通常還能再減免一些金額；公司名稱預查費用行情約落在數百元。加上會計師資本額查核簽證費用、代辦服務費，整體行情合計大約數千元到 2 萬元不等，實際金額仍以各機關與服務單位公告為準。
 
@@ -82,7 +82,7 @@ faq:
 
 ## 什麼時候該找律師
 
-![兩位商務人士握手特寫，達成合作協議](/images/inline/company-formation-guide-4.webp "Photo by RDNE Stock project on Pexels")
+![亞洲團隊在會議室裡越過桌面握手，達成合作協議](/images/inline/company-formation-guide-4.webp "Photo by Thirdman on Pexels")
 
 **多人合夥創業，還沒談好股權分配與退場機制時**：組織型態選定只是第一步，股東之間出資比例、表決權、未來退股或增資的條件，最好在公司章程與股東協議一次講清楚，避免日後拆夥時各說各話。
 

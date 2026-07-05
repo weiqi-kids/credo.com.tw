@@ -7,8 +7,8 @@ topic: estate-tax-planning
 kind: pillar
 keywords: 遺產稅免稅額, 贈與稅244萬, 生前贈與, 遺產稅怎麼算, 繼承稅務規劃, 贈與稅怎麼算
 cover: images/covers/estate-gift-tax-guide.webp
-coverAlt: 稅務表格與零錢特寫，象徵遺產稅與贈與稅規劃
-coverCredit: Photo by Nataliya Vaitkevich on Pexels
+coverAlt: 計算機放在筆記本與文件夾上，象徵遺產稅與贈與稅試算
+coverCredit: Photo by RDNE Stock project on Pexels
 faq:
   - q: 遺產稅免稅額現在是多少？
     a: 依現行公告，遺產稅免稅額為新臺幣1,333萬元，另外配偶、直系血親卑親屬、父母等還有各自的扣除額可以再扣，實際課稅遺產淨額通常會比總財產低很多。確切金額仍以財政部每年公告為準。
@@ -26,7 +26,7 @@ faq:
 
 ## 稅務規劃前必看的7個檢查點
 
-![手機計算機App放在稅務文件上，象徵稅額試算](/images/inline/estate-gift-tax-guide-1.webp "Photo by Polina Tankilevitch on Pexels")
+![計算機、便利貼與筆記本，象徵稅額試算](/images/inline/estate-gift-tax-guide-1.webp "Photo by Tara Winstead on Pexels")
 
 ### 1. 遺產稅免稅額是多少
 
@@ -78,7 +78,7 @@ faq:
 
 ## 什麼時候該找律師
 
-![同事在辦公室裡討論商業策略](/images/inline/estate-gift-tax-guide-4.webp "Photo by Anna Shvets on Pexels")
+![同事在戶外座位討論文件，象徵財務規劃諮詢](/images/inline/estate-gift-tax-guide-4.webp "Photo by Kindel Media on Pexels")
 
 當你的資產橫跨不動產、公司股權、保單、海外財產等多種類別，需要整體稅務與傳承規劃而不是單一工具，值得找律師搭配會計師一起評估。
 
