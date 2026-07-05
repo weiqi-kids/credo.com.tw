@@ -24,7 +24,7 @@ const sorted = sortForList(posts);
           <span class="insight-date">{p.data.date}</span>
           <span class="insight-desc">{p.data.description}</span>
         </span>
-        {p.data.cover && <img class="insight-cover" src={`${base}${p.data.cover}`} alt={p.data.coverAlt || p.data.title} loading="lazy" decoding="async" />}
+        {p.data.cover && <span class="insight-cover-box"><img class="insight-cover" src={`${base}${p.data.cover}`} alt={p.data.coverAlt || p.data.title} loading="lazy" decoding="async" /></span>}
       </a>
     ))}
   </div>
