@@ -18,10 +18,10 @@ export function sortForList(posts: Post[]): Post[] {
   });
 }
 
-/** 某主題的鎮站文（每主題至多一篇） */
+/** 某主題的鎮站文；同主題多篇時取最新（導讀卡指向最新的鎮站文） */
 export async function getPillar(topic: string): Promise<Post | undefined> {
   const posts = await getPublished((p) => p.data.topic === topic && p.data.kind === "pillar");
-  return posts[0];
+  return posts.sort((a, b) => b.data.date.localeCompare(a.data.date))[0];
 }
 
 /** 文章的 URL 路徑（不含 base） */
