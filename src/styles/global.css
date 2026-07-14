@@ -240,6 +240,25 @@ a { color: var(--brand-deep); }
 .breadcrumb { font-size: var(--text-sm); color: var(--ink-soft); margin-bottom: 1.5rem; }
 .breadcrumb a { color: var(--ink-soft); }
 
+/* —— 文章內表格（時限表等）—— */
+.article table {
+  display: block; overflow-x: auto;
+  border-collapse: collapse;
+  margin: 1.2rem 0;
+  font-size: var(--text-sm);
+}
+.article th, .article td {
+  border: 1px solid var(--line);
+  padding: 0.55rem 0.8rem;
+  text-align: left; vertical-align: top;
+  min-width: 6em;
+}
+.article th { background: var(--brand-light); font-weight: 700; white-space: nowrap; }
+.article tr:nth-child(even) td { background: var(--paper); }
+@media (min-width: 640px) {
+  .article table { display: table; width: 100%; }
+}
+
 /* —— 主題總覽（內容骨架，分類頁）—— */
 .topic-map { margin-top: 3.5rem; }
 .topic-service { margin-top: 2rem; }
