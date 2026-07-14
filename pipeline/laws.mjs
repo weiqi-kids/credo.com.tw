@@ -60,6 +60,7 @@ export const LAW_PCODES = {
   '洗錢防制法': 'G0380131',
   '病人自主權利法': 'L0020189',
   '安寧緩和醫療條例': 'L0020066',
+  '戶籍法': 'D0030006',
 };
 
 export function lawUrl(name, article) {
