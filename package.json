@@ -12,7 +12,8 @@
     "astro": "astro",
     "check:fontsize": "node scripts/check-fontsize.mjs",
     "check:aitone": "node scripts/audit-ai-tone.mjs",
-    "check:images": "node scripts/audit-images.mjs"
+    "check:images": "node scripts/audit-images.mjs",
+    "check:legal": "node scripts/audit-legal-claims.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.3",
