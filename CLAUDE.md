@@ -32,6 +32,8 @@ Repo：`weiqi-kids/credo.com.tw`（public）。
 
 ## 待辦（接手進度）
 
+- [ ] **特留分修法進度每月檢視**（律師查核報告 2026-07-14 指示）：查立法院院會處理進度；**三讀通過當日**需改寫 forced-share-reform-guide 的「進度」與「迷思」兩節
+
 - [ ] DNS 切換：設 repo 變數 `CUSTOM_DOMAIN=credo.com.tw`（deploy.yml 自動處理 CNAME/BASE/SITE）
 - [ ] 接 seo-ops：備妥 GA4/GSC 服務帳號與 Slack 頻道後跑 `node /root/seo-ops/bin/site-preflight.mjs`
 - [ ] 文章製作流程細修（進行中的階段，品質達標為 cron 前置條件）
