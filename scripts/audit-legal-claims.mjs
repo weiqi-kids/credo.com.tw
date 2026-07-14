@@ -20,7 +20,8 @@ const PATTERNS = [
 let hits = 0;
 for (const dir of ["src/content/insights", "src/content/resources"]) {
   for (const f of readdirSync(dir).filter((x) => x.endsWith(".md"))) {
-    const s = readFileSync(`${dir}/${f}`, "utf8");
+    // 略過「資料來源」段——條文標籤（如「死亡前2年內贈與之併計」）非主張本身
+    const s = readFileSync(`${dir}/${f}`, "utf8").split(/^## 資料來源$/m)[0];
     for (const [label, re] of PATTERNS) {
       const m = s.match(re);
       if (m) { console.log(`⚠ ${f}｜${label}｜…${m[0].slice(0, 50)}…`); hits += 1; }
