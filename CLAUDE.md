@@ -8,8 +8,9 @@ Repo：`weiqi-kids/credo.com.tw`（public）。
 
 ## 硬規則（違反會壞站或壞規範）
 
-1. **顏色只改/只用 `src/styles/tokens.css` 的 token**（oklch 為準＋hex fallback）；元件禁寫死色值。
-2. **字級只用 `--text-*` 階梯，最小 18px**；commit 前 `npm run check:fontsize` ＋ `npm run build` 必須全過（CI 也會擋）。
+1. **設計規範守門 v2（2026-07-20 全站統一，`scripts/check-design.mjs`，`npm run build` 前自動跑、CI 也擋）五條**：
+   ① font-size 禁 px，一律 `var(--text-*)` 階梯（最小 18px）；② 顏色（hex/rgb/hsl）只准出現在 `src/styles/variables.css`（oklch 為準＋hex fallback），元件禁寫死色值；③ 禁 `!important`；④ 禁外部 CDN（fonts.googleapis/cdnjs/unpkg/jsdelivr）；⑤ `src/` 下 `.css` 只准 `src/styles/{variables,global}.css`，元件樣式用 scoped `<style>`。
+2. commit 前 `npm run build` 必須全過（內含 `check:design`；舊 `check:fontsize` 已被 v2 涵蓋並移除）。
 3. **Markdown 文章內鏈用根路徑 Markdown 語法**（`[x](/companysafe/)`），禁 raw HTML `<a>/<img>`——不會被加 base 前綴，上線 404。
 4. 有 base 子路徑：`.astro` 內部連結/圖片一律 `import.meta.env.BASE_URL` 前綴，禁寫死 `/xxx`。
 5. 商家資訊（公司名/LINE/SCA 連結）只改 `src/lib/site.ts`。

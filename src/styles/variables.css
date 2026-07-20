@@ -1,6 +1,6 @@
 /* 詠業 credo.com.tw 設計 token（單一真實來源）
  * 規範：顏色一律在此定義（oklch 為準、hex 為 fallback），元件只用 var(--…)；
- * 字級一律 --text-* 階梯（最小 18px），禁 px 硬編、禁 !important。
+ * 字級一律 --text-* 階梯（最小 18px），禁 px 硬編、禁強制覆寫（important）。
  * 色票源自原站 Elementor（#CDAD7D / #DBBF94 / #E8D1AE / #F4F1EC / #A2ACB0F7 / #000）。 */
 :root {
   /* 品牌與背景 */
@@ -38,6 +38,7 @@
   --radius-md: 12px;
   --radius-lg: 20px;
   --shadow: 0 4px 18px rgba(60, 52, 40, 0.12);
+  --shadow-text: 0 1px 6px rgba(30, 45, 60, 0.6); /* 深色圖底白字陰影 */
   --container: 1140px;
 }
 

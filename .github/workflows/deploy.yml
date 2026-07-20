@@ -25,8 +25,8 @@ jobs:
       - name: Write CNAME for custom domain
         if: ${{ vars.CUSTOM_DOMAIN != '' }}
         run: echo "${{ vars.CUSTOM_DOMAIN }}" > public/CNAME
-      - name: Font-size gate
-        run: node scripts/check-fontsize.mjs
+      - name: Design gate (v2)
+        run: node scripts/check-design.mjs
       - name: AI-tone gate
         run: node scripts/audit-ai-tone.mjs
       - name: Image gate
@@ -48,3 +48,24 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+  # 守門/建置/部署失敗 → Slack 告警（secrets 未設時靜默略過）
+  notify-failure:
+    needs: [build, deploy]
+    if: failure()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify Slack
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
+          SLACK_CHANNEL_ID: ${{ secrets.SLACK_CHANNEL_ID }}
+        run: |
+          if [ -z "$SLACK_BOT_TOKEN" ] || [ -z "$SLACK_CHANNEL_ID" ]; then
+            echo "Slack secrets not set; skip notify."
+            exit 0
+          fi
+          RUN_URL="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          TEXT="🚨 ${{ github.repository }} 部署被守門擋下（commit ${GITHUB_SHA::7}）。請修正設計規範/建置錯誤後 push，workflow 會自動重審。詳情： $RUN_URL"
+          curl -sf -X POST https://slack.com/api/chat.postMessage \
+            -H "Authorization: Bearer $SLACK_BOT_TOKEN" \
+            -H 'Content-type: application/json; charset=utf-8' \
+            -d "$(jq -n --arg ch "$SLACK_CHANNEL_ID" --arg t "$TEXT" '{channel:$ch,text:$t}')"

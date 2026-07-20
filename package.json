@@ -7,10 +7,10 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "node scripts/check-design.mjs && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "check:fontsize": "node scripts/check-fontsize.mjs",
+    "check:design": "node scripts/check-design.mjs",
     "check:aitone": "node scripts/audit-ai-tone.mjs",
     "check:images": "node scripts/audit-images.mjs",
     "check:legal": "node scripts/audit-legal-claims.mjs"

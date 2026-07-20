@@ -1,5 +1,5 @@
-/* 全站版型樣式：顏色只取 tokens.css 的 var(--…)，字級只取 var(--text-*)。 */
-@import "./tokens.css";
+/* 全站版型樣式：顏色只取 variables.css 的 var(--…)，字級只取 var(--text-*)。 */
+@import "./variables.css";
 
 * { box-sizing: border-box; }
 
@@ -120,7 +120,7 @@ a { color: var(--brand-deep); }
   color: var(--on-brand);
   font-size: var(--text-xl); font-weight: 700;
   letter-spacing: 0.2em;
-  text-shadow: 0 1px 6px rgba(30, 45, 60, 0.6);
+  text-shadow: var(--shadow-text);
 }
 
 /* —— 三欄服務卡（企業安全／個人安全）—— */

@@ -16,7 +16,7 @@ node pipeline/run.mjs || echo "[cron] run.mjs 非零退出"
 
 if [ "${DRY_RUN:-}" = "1" ]; then echo "[cron] DRY_RUN — 不 commit"; exit 0; fi
 
-npm run check:aitone && npm run check:fontsize && npm run build
+npm run check:aitone && npm run check:design && npm run build
 
 git add src/content/insights pipeline/state pipeline/published-log.md
 if git diff --cached --quiet; then
