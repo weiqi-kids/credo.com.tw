@@ -13,7 +13,7 @@ const DEID_PATTERNS = [
   { kind: 'address', re: /[路街段巷弄][^，。、\s]{0,8}?\d+號/g },
 ];
 
-// 閘門一 b：AI 味句型（與 scripts/audit-ai-tone.mjs 同清單的核心子集，擋在寫檔前）
+// 閘門一 b：AI 味句型（與 scripts/check-content.mjs 同清單的核心子集，擋在寫檔前）
 const AI_TONE_PATTERNS = [
   /（[^）]*）/, /不僅[^。！？\n]{1,30}(更|還|也)/, /不只?是[^。！？\n]{1,30}(更是|而是)/,
   /並非[^。！？\n]{1,30}而是/, /值得注意的是/, /值得一提/, /換句話說/, /總的來說/, /總結來說/,

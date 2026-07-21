@@ -27,8 +27,11 @@ jobs:
         run: echo "${{ vars.CUSTOM_DOMAIN }}" > public/CNAME
       - name: Design gate (v2)
         run: node scripts/check-design.mjs
-      - name: AI-tone gate
-        run: node scripts/audit-ai-tone.mjs
+      # 內容守門（去 AI 味）＝統一引擎 scripts/check-content.mjs（同 new-astro-site skill）。
+      # 亦已收進 npm build；此獨立 step 與 design gate 同慣例，確保 CI 明確攔一道。
+      # 淺 checkout 抓不到 origin/main 時 grandfather 存量、掃 0 檔放行（設計如此，真攔在本地 build 的變動檔掃描）。
+      - name: Content gate (去 AI 味)
+        run: node scripts/check-content.mjs
       - name: Image gate
         run: node scripts/audit-images.mjs
       - name: Build with Astro

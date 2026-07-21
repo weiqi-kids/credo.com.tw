@@ -118,8 +118,8 @@ for (const jid of fresh) {
     log(`✓ DRY 通過全部閘門 → ${PATHS.quarantine}/DRY-${slug}.md`);
   } else {
     writeFileSync(outPath, md);
-    // 全站 AI 味稽核（含新檔）——不過就撤檔隔離
-    try { execSync('node scripts/audit-ai-tone.mjs', { stdio: 'pipe' }); }
+    // 內容守門（去 AI 味，統一引擎）——掃剛寫的檔，不過就撤檔隔離
+    try { execSync(`node scripts/check-content.mjs ${outPath}`, { stdio: 'pipe' }); }
     catch (e) {
       execSync(`mv ${outPath} ${PATHS.quarantine}/aitone-${slug}.md`);
       log(`AI 味稽核退件 ${slug}`);

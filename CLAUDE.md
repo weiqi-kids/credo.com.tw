@@ -10,15 +10,16 @@ Repo：`weiqi-kids/credo.com.tw`（public）。
 
 1. **設計規範守門 v2（2026-07-20 全站統一，`scripts/check-design.mjs`，`npm run build` 前自動跑、CI 也擋）五條**：
    ① font-size 禁 px，一律 `var(--text-*)` 階梯（最小 18px）；② 顏色（hex/rgb/hsl）只准出現在 `src/styles/variables.css`（oklch 為準＋hex fallback），元件禁寫死色值；③ 禁 `!important`；④ 禁外部 CDN（fonts.googleapis/cdnjs/unpkg/jsdelivr）；⑤ `src/` 下 `.css` 只准 `src/styles/{variables,global}.css`，元件樣式用 scoped `<style>`。
-2. commit 前 `npm run build` 必須全過（內含 `check:design`；舊 `check:fontsize` 已被 v2 涵蓋並移除）。
-3. **Markdown 文章內鏈用根路徑 Markdown 語法**（`[x](/companysafe/)`），禁 raw HTML `<a>/<img>`——不會被加 base 前綴，上線 404。
-4. 有 base 子路徑：`.astro` 內部連結/圖片一律 `import.meta.env.BASE_URL` 前綴，禁寫死 `/xxx`。
-5. 商家資訊（公司名/LINE/SCA 連結）只改 `src/lib/site.ts`。
-6. 內容以原站為準；發文＝放 `src/content/insights/<slug>.md`（格式見 README）。
-7. **選題/找素材對照 `docs/content-taxonomy.md`**（6 服務 × 25 主題 × 台灣搜尋關鍵字＋四種內容代名詞：借鏡文/鎮站文/錦囊/時事文）；文章 frontmatter `topic` 必須是表內 slug（build 會驗證），程式端映射在 `src/lib/site.ts` 的 `SERVICES`。
-8. **法域鎖台灣＋引用附原始連結**：只引中華民國法規/判決；法條連結由程式查表生成驗證，禁止手寫或 AI 生成網址。
-9. **取文一律走 `src/lib/content.ts` 的 `getPublished()`**（統一 draft 過濾），不要直接 `getCollection`。
-10. 整體佈局與生長計畫見 `/root/.claude/plans/smooth-sparking-wall.md`（Phase 2 鎮站文 → Phase 3 借鏡文管線 → Phase 4 錦囊）。
+2. **內容守門（去 AI 味）v2（2026-07-21 統一為 new-astro-site skill 引擎，`scripts/check-content.mjs`，`npm run build` 前自動跑、CI 也擋）**：舊自有 `scripts/audit-ai-tone.mjs`（`check:aitone`）已移除。統一引擎＝兩級（ERROR 擋 build／WARN 軟訊號跨 ≥3 層才升級）＋grandfather（預設只掃相對 `origin/main` 的變動 `.md/.mdx`，存量不追殺；`--all` 全站盤點不擋）。credo 特化已 port 進檔內 `SITE_ERROR_TELLS`（全形括號旁白 `（…）`＝用戶紅線、扮演…角色）與 `ALLOW`（法律用語 `民國\d+年`／`第\d+條` 免誤判）；核心跨站規則勿改。指令：`check:content`（變動檔）／`check:content:all`（全站）。**法律主張稽核 `check:legal`、配圖稽核 `check:images` 為非 AI 腔守門，保留不動。**
+3. commit 前 `npm run build` 必須全過（內含 `check:design` + `check:content`；舊 `check:fontsize`/`check:aitone` 已移除）。
+4. **Markdown 文章內鏈用根路徑 Markdown 語法**（`[x](/companysafe/)`），禁 raw HTML `<a>/<img>`——不會被加 base 前綴，上線 404。
+5. 有 base 子路徑：`.astro` 內部連結/圖片一律 `import.meta.env.BASE_URL` 前綴，禁寫死 `/xxx`。
+6. 商家資訊（公司名/LINE/SCA 連結）只改 `src/lib/site.ts`。
+7. 內容以原站為準；發文＝放 `src/content/insights/<slug>.md`（格式見 README）。
+8. **選題/找素材對照 `docs/content-taxonomy.md`**（6 服務 × 25 主題 × 台灣搜尋關鍵字＋四種內容代名詞：借鏡文/鎮站文/錦囊/時事文）；文章 frontmatter `topic` 必須是表內 slug（build 會驗證），程式端映射在 `src/lib/site.ts` 的 `SERVICES`。
+9. **法域鎖台灣＋引用附原始連結**：只引中華民國法規/判決；法條連結由程式查表生成驗證，禁止手寫或 AI 生成網址。
+10. **取文一律走 `src/lib/content.ts` 的 `getPublished()`**（統一 draft 過濾），不要直接 `getCollection`。
+11. 整體佈局與生長計畫見 `/root/.claude/plans/smooth-sparking-wall.md`（Phase 2 鎮站文 → Phase 3 借鏡文管線 → Phase 4 錦囊）。
 
 ## 現階段：文章製作流程細修（2026-07-04 起）
 
