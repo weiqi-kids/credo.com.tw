@@ -31,6 +31,8 @@ GitHub 端：repo variable `CUSTOM_DOMAIN=credo.com.tw`、Pages custom domain �
 
 **用戶判定現有 31 篇為初稿等級、未達律師品牌文體標準。** 細修完成前：不掛 cron、新文章產製先讀 `docs/lessons-writing.md`（文體失敗模式與有效手段）再動筆。
 
+**收錄凍結（2026-07-28 起，用戶指示）**：DNS 已切、站已公開，但 `/insights/` 暫不開放搜尋引擎與 AI 爬蟲收錄——robots.txt 對五個 UA 全下 `Disallow: /insights/`，sitemap 同步排除（robots 擋的路徑不可還出現在 sitemap）。**唯一開關＝`src/lib/crawl-policy.mjs` 的 `INSIGHTS_CRAWLABLE`**，`robots.txt.ts` 與 `astro.config.mjs` 都讀它，別各自改。**文體達標且用戶點頭後**改成 `true` 再 build/push 即放行。真人瀏覽不受影響（Disallow 只擋爬取），首頁與方案頁的「最新法律新知」區塊照常顯示。
+
 ## 借鏡文管線（pipeline/）
 
 - 每日產線：`pipeline/cron.sh`（**尚未掛 cron**，排程建議 UTC 17:40）；乾跑 `DRY_RUN=1`。

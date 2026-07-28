@@ -87,6 +87,7 @@ faq:              # 選填：渲染成可見 FAQ 區塊 + FAQPage schema（AEO�
 
 - `robots.txt`：`src/pages/robots.txt.ts`（開放 GPTBot/PerplexityBot/ClaudeBot/Google-Extended，指向 sitemap-index.xml）。**2026-07-28 網域切換後已生效**：https://credo.com.tw/robots.txt 。
 - sitemap：`@astrojs/sitemap` 產 `sitemap-index.xml`，URL 隨 SITE_URL/BASE_PATH 自動切換。
+- **收錄凍結（2026-07-28 起）**：文章文體達標前，`/insights/` 不開放收錄——robots 全 UA `Disallow: /insights/`＋sitemap 排除。開關唯一來源 `src/lib/crawl-policy.mjs` 的 `INSIGHTS_CRAWLABLE`（`robots.txt.ts` 與 `astro.config.mjs` 共用）；放行改 `true` 即可，兩處自動同步。
 - 尚未接 seo-ops（GA4/GSC/Slack 憑證備妥後走 `site-preflight.mjs` 流程）。
 
 ## 對原站的刻意差異

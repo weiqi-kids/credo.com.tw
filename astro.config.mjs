@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import sitemap from '@astrojs/sitemap';
+import { INSIGHTS_CRAWLABLE, INSIGHTS_PATH } from './src/lib/crawl-policy.mjs';
 
 // 部署設定：預設為 GitHub Pages 專案頁（子路徑）。
 // 未來 DNS 切換到 credo.com.tw 時，只要設 repo 變數 CUSTOM_DOMAIN=credo.com.tw
@@ -59,7 +60,13 @@ export default defineConfig({
   site: SITE,
   base: BASE,
   trailingSlash: 'always',
-  integrations: [sitemap()],
+  // sitemap 與 robots 必須一致：robots 擋掉的路徑不可還出現在 sitemap，
+  // 否則等於一邊叫爬蟲別來、一邊把網址送過去。開關同在 crawl-policy.mjs。
+  integrations: [
+    sitemap({
+      filter: (page) => INSIGHTS_CRAWLABLE || !page.includes(INSIGHTS_PATH),
+    }),
+  ],
   markdown: {
     rehypePlugins: [rehypeBasePrefix, rehypeFloatFigures],
   },
