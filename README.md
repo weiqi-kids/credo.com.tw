@@ -1,8 +1,9 @@
 # credo.com.tw — 詠業商略顧問有限公司
 
 接手 https://credo.com.tw/ （原站 WordPress 7.0 + Elementor 4.1.4）的改版專案。
-**Astro 6 靜態網站**（骨架同 olderkkk.com），部署 GitHub Pages：
-**https://weiqi-kids.github.io/credo.com.tw/**
+**Astro 6 靜態網站**（骨架同 olderkkk.com），部署 GitHub Pages。
+**正式網址：https://credo.com.tw/**（2026-07-28 DNS 已切換，`www` 301 導向 apex；
+舊子路徑 `weiqi-kids.github.io/credo.com.tw/` 已停用）。
 
 ## 技術棧 / 常用指令
 
@@ -19,8 +20,12 @@ npm run check:design     # 設計規範守門 v2：px 字級/顏色 token/!impor
 
 - push `main` → GitHub Actions（`.github/workflows/deploy.yml`）自動 build & 部署 Pages。
 - 修改後務必：`npm run build` 成功（內含 `check:design` 守門），再 commit/push。
-- **正式網域切換總開關**（同 olderkkk）：DNS 就緒後設 repo 變數
-  `CUSTOM_DOMAIN=credo.com.tw` 即自動改用 `BASE_PATH=/`、寫入 CNAME；未設時維持子路徑。
+- **正式網域切換總開關**（同 olderkkk）：repo 變數 `CUSTOM_DOMAIN=credo.com.tw`
+  即自動改用 `BASE_PATH=/`、寫入 CNAME；未設時退回子路徑。**2026-07-28 已設定，勿刪**
+  （刪掉會讓全站連結退回 `/credo.com.tw/…` 而正式網域仍指向此處＝全站 404）。
+- **DNS（GoDaddy，2026-07-28 last-verified）**：apex A → `185.199.108–111.153`、
+  `www` CNAME → `weiqi-kids.github.io`；**MX/SPF 走 `secureserver.net`，改 DNS 時不可動到（公司信箱）**。
+  GitHub Pages custom domain = `credo.com.tw`、Enforce HTTPS 開，憑證含 apex + www。
 
 ## 頁面與內容
 
@@ -80,7 +85,7 @@ faq:              # 選填：渲染成可見 FAQ 區塊 + FAQPage schema（AEO�
 
 ## SEO
 
-- `robots.txt`：`src/pages/robots.txt.ts`（開放 GPTBot/PerplexityBot/ClaudeBot/Google-Extended，指向 sitemap-index.xml）。子路徑期間不生效（robots 必須在網域根目錄），CUSTOM_DOMAIN 切換後自動生效。
+- `robots.txt`：`src/pages/robots.txt.ts`（開放 GPTBot/PerplexityBot/ClaudeBot/Google-Extended，指向 sitemap-index.xml）。**2026-07-28 網域切換後已生效**：https://credo.com.tw/robots.txt 。
 - sitemap：`@astrojs/sitemap` 產 `sitemap-index.xml`，URL 隨 SITE_URL/BASE_PATH 自動切換。
 - 尚未接 seo-ops（GA4/GSC/Slack 憑證備妥後走 `site-preflight.mjs` 流程）。
 

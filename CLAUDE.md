@@ -1,8 +1,14 @@
 # www.credo.com.tw — 維運手冊
 
-詠業商略顧問有限公司官網改版專案。原站 https://credo.com.tw/ （WordPress+Elementor，尚未切換 DNS），
-本 repo 為 **Astro 6 靜態站**（骨架同 olderkkk.com），Pages：https://weiqi-kids.github.io/credo.com.tw/
-Repo：`weiqi-kids/credo.com.tw`（public）。
+詠業商略顧問有限公司官網改版專案。**2026-07-28 DNS 已切換，本站即正式站**：https://credo.com.tw/
+（原站 WordPress+Elementor 已隨 DNS 切走下線，主機仍在 GoDaddy）。
+本 repo 為 **Astro 6 靜態站**（骨架同 olderkkk.com）。Repo：`weiqi-kids/credo.com.tw`（public）。
+
+**網域設定現況（2026-07-28 last-verified）**：DNS 在 GoDaddy（`ns21/ns22.domaincontrol.com`）；
+apex A → `185.199.108–111.153`（TTL 600，穩定後可調回 3600）、`www` CNAME → `weiqi-kids.github.io`（301 導 apex）；
+**MX/SPF 仍走 `secureserver.net`，動 DNS 時絕不可改到，否則公司信箱死**。
+GitHub 端：repo variable `CUSTOM_DOMAIN=credo.com.tw`、Pages custom domain 同值、Enforce HTTPS 已開，
+憑證涵蓋 apex + www，到期 2026-10-26（GitHub 自動續簽）。無 AAAA（IPv6 未設，選配）。
 
 **架構、發文方式、設計規範、部署與網域切換 → 全在 `README.md`，改東西前先讀。**
 
@@ -36,7 +42,7 @@ Repo：`weiqi-kids/credo.com.tw`（public）。
 
 - [ ] **特留分修法進度每月檢視**（律師查核報告 2026-07-14 指示）：查立法院院會處理進度；**三讀通過當日**需改寫 forced-share-reform-guide 的「進度」與「迷思」兩節
 
-- [ ] DNS 切換：設 repo 變數 `CUSTOM_DOMAIN=credo.com.tw`（deploy.yml 自動處理 CNAME/BASE/SITE）
+- [x] ~~DNS 切換~~ **2026-07-28 完成**：GoDaddy 改 A/CNAME＋repo 變數 `CUSTOM_DOMAIN=credo.com.tw`＋Pages custom domain＋Enforce HTTPS，全站已在 https://credo.com.tw/ 正常服務（robots.txt 與 sitemap 同步生效）
 - [ ] 接 seo-ops：備妥 GA4/GSC 服務帳號與 Slack 頻道後跑 `node /root/seo-ops/bin/site-preflight.mjs`
 - [ ] 文章製作流程細修（進行中的階段，品質達標為 cron 前置條件）
 - [ ] 借鏡文 cron 排程（文體達標＋用戶點頭後：`40 17 * * *`）＋司法院獨立帳號
