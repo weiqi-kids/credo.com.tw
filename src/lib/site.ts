@@ -7,11 +7,24 @@ export const COPYRIGHT = "版權所有 © 2023 詠業商略顧問有限公司";
 
 // 文章署名（YMYL/E-E-A-T）：真實律師姓名＋登錄字號後補，補上後全站自動生效。
 // 文章 frontmatter `author` 對應這裡的 key；查不到就以 author 字串直接顯示。
-export const AUTHORS: Record<string, { name: string; credential: string; bio: string }> = {
+// type 決定 schema.org 的 author 型別（Person=具名自然人，Organization=團隊/法人）。
+// 註：律師證書字號屬個資，不放進 repo、不輸出到頁面。
+export const AUTHORS: Record<
+  string,
+  { name: string; credential: string; bio: string; type: "Person" | "Organization" }
+> = {
   "詠業CREDO 法務團隊": {
     name: "詠業CREDO 法務團隊",
     credential: "執業律師與上市公司法務主管組成",
     bio: "詠業商略顧問由執業律師、ISO27001 資安認證顧問與多家上市公司法務主管組成，專注個人與中小企業的「安全」解決方案。",
+    type: "Organization",
+  },
+  // credential／bio 待律師本人提供學經歷與專長後補；留空時只顯示姓名。
+  邱翊庭律師: {
+    name: "邱翊庭律師",
+    credential: "",
+    bio: "",
+    type: "Person",
   },
 };
 

@@ -6,6 +6,7 @@ category: personal-asset
 topic: trust-succession
 kind: pillar
 keywords: 遺囑信託, 保險金信託, 家族信託 門檻, 信託傳承, 財產傳承規劃, 保險金信託費用
+author: 邱翊庭律師
 cover: images/covers/family-trust-guide.webp
 coverAlt: 銀行保險箱鎖具排列特寫，象徵財富保護與傳承
 coverCredit: Photo by Orhan Pergel on Pexels

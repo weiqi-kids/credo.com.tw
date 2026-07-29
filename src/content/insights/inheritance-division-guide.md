@@ -6,6 +6,7 @@ category: personal-asset
 topic: inheritance
 kind: pillar
 keywords: 特留分怎麼算, 拋棄繼承期限, 遺產分割協議, 兄弟姊妹爭產, 拋棄繼承費用, 法定繼承順位
+author: 邱翊庭律師
 cover: images/covers/inheritance-division-guide.webp
 coverAlt: 一家人圍坐餐桌享用早餐的溫馨畫面
 coverCredit: Photo by Annushka Ahuja on Pexels

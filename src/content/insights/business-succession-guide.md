@@ -6,6 +6,7 @@ category: corporate-legal
 topic: governance-succession
 kind: pillar
 keywords: 家族企業接班, 董事責任, 股權傳承, 公司治理, 特留分, 遺產稅規劃
+author: 邱翊庭律師
 cover: images/covers/business-succession-guide.webp
 coverAlt: 兩位東亞面孔商務人士在辦公室握手，象徵家族企業經營權交接
 coverCredit: Photo by ThirdMan on Pexels

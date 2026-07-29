@@ -6,6 +6,7 @@ category: personal-asset
 topic: estate-tax-planning
 kind: pillar
 keywords: 遺產稅免稅額, 贈與稅244萬, 生前贈與, 遺產稅怎麼算, 繼承稅務規劃, 贈與稅怎麼算
+author: 邱翊庭律師
 cover: images/covers/estate-gift-tax-guide.webp
 coverAlt: 計算機放在筆記本與文件夾上，象徵遺產稅與贈與稅試算
 coverCredit: Photo by RDNE Stock project on Pexels
