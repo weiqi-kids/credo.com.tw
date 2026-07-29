@@ -21,6 +21,8 @@ GitHub 端：repo variable `CUSTOM_DOMAIN=credo.com.tw`、Pages custom domain �
 4. **Markdown 文章內鏈用根路徑 Markdown 語法**（`[x](/companysafe/)`），禁 raw HTML `<a>/<img>`——不會被加 base 前綴，上線 404。
 5. 有 base 子路徑：`.astro` 內部連結/圖片一律 `import.meta.env.BASE_URL` 前綴，禁寫死 `/xxx`。
 6. 商家資訊（公司名/LINE/SCA 連結）只改 `src/lib/site.ts`。
+   **文章署名**：作者資料同樣只在 `src/lib/site.ts` 的 `AUTHORS`（`type: "Person"` 會讓文章 JSON-LD 輸出 Person＋worksFor，`Organization` 維持團隊署名）；文章 frontmatter `author` 填 key。
+   **律師證書字號屬個資，用戶明示不得公開**：不寫進 repo、不輸出到頁面或 schema，只作為線下佐證。
 7. 內容以原站為準；發文＝放 `src/content/insights/<slug>.md`（格式見 README）。
 8. **選題/找素材對照 `docs/content-taxonomy.md`**（6 服務 × 25 主題 × 台灣搜尋關鍵字＋四種內容代名詞：借鏡文/鎮站文/錦囊/時事文）；文章 frontmatter `topic` 必須是表內 slug（build 會驗證），程式端映射在 `src/lib/site.ts` 的 `SERVICES`。
 9. **法域鎖台灣＋引用附原始連結**：只引中華民國法規/判決；法條連結由程式查表生成驗證，禁止手寫或 AI 生成網址。
