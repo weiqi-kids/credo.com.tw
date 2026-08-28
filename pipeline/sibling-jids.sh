@@ -5,6 +5,6 @@
 set -euo pipefail
 OUT="${1:-pipeline/.cache/today-jids.json}"
 mkdir -p "$(dirname "$OUT")"
-git -C /root/www.dreamer868.com diff HEAD~1 HEAD -- pipeline/state/seen-jids.json \
+git -C /mnt/customer/www.dreamer868.com diff HEAD~1 HEAD -- pipeline/state/seen-jids.json \
   | grep '^+' | grep -oE '"[A-Z]+,[^"]+"' | jq -s '.' > "$OUT"
 echo "取得 $(jq length "$OUT") 筆 → $OUT"
