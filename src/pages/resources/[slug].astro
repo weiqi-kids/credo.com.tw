@@ -17,14 +17,11 @@ const { Content } = await render(tool);
 const base = import.meta.env.BASE_URL;
 const t = tool.data.topic ? TOPICS[tool.data.topic] : null;
 
-const schemas: object[] = [
-  {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
-    name: tool.data.title,
-    description: tool.data.description,
-  },
-];
+// 🔴 2026-09-27 移除 HowTo：Google 已於 2023-09 全面移除 HowTo 複合式搜尋結果，
+//    標記沒有任何曝光效果。而且這裡的 HowTo 只有 name／description、連 step 都沒有，
+//    本來就不構成可用的程序知識標記。
+//    判準來源：seo-ops rules/jsonld-rules.json（structuredData.deprecated）。
+const schemas: object[] = [];
 if (tool.data.faq.length) {
   schemas.push({
     "@context": "https://schema.org",
